@@ -4,6 +4,8 @@ A comprehensive research tracking system for 66+ AI providers across 8 major cat
 
 ![Dashboard Preview](logo.svg)
 
+🌐 **[Visit the Interactive Website](https://jazer-444.github.io/ai-master-reference-guide/)** | 📊 **[Explore the Dashboard](https://jazer-444.github.io/ai-master-reference-guide/dashboard.html)** | 🔍 **[Browse Models](https://jazer-444.github.io/ai-master-reference-guide/explore.html)**
+
 ## Features
 
 ### 📊 Interactive Dashboard
@@ -46,14 +48,16 @@ A comprehensive research tracking system for 66+ AI providers across 8 major cat
 
 ## Quick Start
 
-### 1. View the Dashboard
+### 1. View the Interactive Website
 
-Start a local web server:
+🌐 Visit: **[https://jazer-444.github.io/ai-master-reference-guide/](https://jazer-444.github.io/ai-master-reference-guide/)**
+
+Or run locally:
 ```bash
 python -m http.server 8000
 ```
 
-Then open: http://localhost:8000/dashboard.html
+Then open: http://localhost:8000
 
 ### 2. Add New Providers
 

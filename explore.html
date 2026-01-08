@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore AI Models - Interactive Guide</title>
+    <meta name="description" content="Interactive exploration tool for AI models and providers">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #111729;
+            --bg-card: #1a1f3a;
+            --bg-card-hover: #232949;
+            --text-primary: #ffffff;
+            --text-secondary: #8b92b0;
+            --text-muted: #5a5f7d;
+            --border-color: #2a2f4a;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #6366f1;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --border-color: #e2e8f0;
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-primary);
+        }
+
+        .theme-toggle {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .filters {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .filter-group select,
+        .filter-group input {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .comparison-mode {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .comparison-mode input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .providers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .provider-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .provider-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent-primary);
+        }
+
+        .provider-card.selected {
+            border-color: var(--accent-primary);
+            border-width: 2px;
+            background: var(--bg-card-hover);
+        }
+
+        .provider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .provider-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .provider-category {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .status-badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .status-completed {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+        }
+
+        .status-in-progress {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+        }
+
+        .status-not-started {
+            background: rgba(90, 95, 125, 0.2);
+            color: var(--text-muted);
+        }
+
+        .provider-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0.5rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .provider-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .provider-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .btn-small {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 1;
+            text-align: center;
+        }
+
+        .btn-primary-small {
+            background: var(--accent-primary);
+            color: white;
+        }
+
+        .btn-secondary-small {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-small:hover {
+            transform: translateY(-2px);
+        }
+
+        .compare-panel {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-card);
+            border: 2px solid var(--accent-primary);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            box-shadow: var(--shadow-lg);
+            display: none;
+            z-index: 1000;
+        }
+
+        .compare-panel.active {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 900px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links a:not(.active) {
+                display: none;
+            }
+            
+            .providers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="AI Master Reference">
+                <span>AI Master Reference</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html" class="active">Explore</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="https://github.com/JaZeR-444/ai-master-reference-guide" target="_blank">GitHub</a>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label>🔍 Search Providers</label>
+                    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="filterProviders()">
+                </div>
+                <div class="filter-group">
+                    <label>📁 Category</label>
+                    <select id="categoryFilter" onchange="filterProviders()">
+                        <option value="">All Categories</option>
+                        <option value="General-Purpose-LLMs">General-Purpose LLMs</option>
+                        <option value="Image-Generation">Image Generation</option>
+                        <option value="Video-Generation">Video Generation</option>
+                        <option value="Music-Generation">Music Generation</option>
+                        <option value="Voice-and-Speech">Voice & Speech</option>
+                        <option value="3D-and-World-Generation">3D & World Generation</option>
+                        <option value="Model-Hosting-and-Inference">Model Hosting & Inference</option>
+                        <option value="Creative-and-Productivity-Apps">Creative & Productivity</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>✅ Status</label>
+                    <select id="statusFilter" onchange="filterProviders()">
+                        <option value="">All Statuses</option>
+                        <option value="completed">Completed</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="not_started">Not Started</option>
+                    </select>
+                </div>
+            </div>
+            <div class="comparison-mode">
+                <input type="checkbox" id="compareMode" onchange="toggleCompareMode()">
+                <label for="compareMode">Enable Comparison Mode</label>
+            </div>
+        </div>
+
+        <div class="providers-grid" id="providersGrid">
+            <!-- Providers will be loaded here -->
+        </div>
+    </div>
+
+    <div class="compare-panel" id="comparePanel">
+        <span id="compareCount">0 providers selected</span>
+        <button class="btn-small btn-primary-small" onclick="compareProviders()">Compare</button>
+        <button class="btn-small btn-secondary-small" onclick="clearComparison()">Clear</button>
+    </div>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        let allProviders = [];
+        let selectedProviders = [];
+        let compareMode = false;
+
+        async function loadProviders() {
+            try {
+                const response = await fetch('dashboard-data.json');
+                const data = await response.json();
+                
+                allProviders = [];
+                data.categories.forEach(category => {
+                    category.providers.forEach(provider => {
+                        allProviders.push({
+                            ...provider,
+                            categoryName: category.display_name,
+                            categoryKey: category.name
+                        });
+                    });
+                });
+                
+                displayProviders(allProviders);
+            } catch (error) {
+                console.error('Error loading providers:', error);
+            }
+        }
+
+        function displayProviders(providers) {
+            const grid = document.getElementById('providersGrid');
+            grid.innerHTML = providers.map(provider => {
+                const totalFiles = Object.values(provider.folder_contents).reduce((sum, folder) => sum + folder.file_count, 0);
+                const foldersWithContent = Object.values(provider.folder_contents).filter(folder => folder.has_content).length;
+                
+                return `
+                    <div class="provider-card ${selectedProviders.includes(provider.name) ? 'selected' : ''}" 
+                         onclick="${compareMode ? `toggleSelection('${provider.name}')` : `showDetails('${provider.name}')`}">
+                        <div class="provider-header">
+                            <div>
+                                <div class="provider-name">${provider.name}</div>
+                                <div class="provider-category">${provider.categoryName}</div>
+                            </div>
+                            <span class="status-badge status-${provider.status}">
+                                ${provider.status.replace('_', ' ')}
+                            </span>
+                        </div>
+                        
+                        <div class="provider-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">${totalFiles}</div>
+                                <div class="stat-label">Files</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${foldersWithContent}</div>
+                                <div class="stat-label">Active Folders</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${provider.research_files.length}</div>
+                                <div class="stat-label">Research</div>
+                            </div>
+                        </div>
+                        
+                        ${provider.research_files.length > 0 ? `
+                            <div class="provider-description">
+                                ${provider.research_files[0].executive_summary || 'Research analysis available'}
+                            </div>
+                        ` : ''}
+                        
+                        <div class="provider-actions">
+                            <a href="${provider.folder_path}" class="btn-small btn-secondary-small" onclick="event.stopPropagation()">📁 Folder</a>
+                            <button class="btn-small btn-primary-small" onclick="event.stopPropagation(); showDetails('${provider.name}')">View Details</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterProviders() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const category = document.getElementById('categoryFilter').value;
+            const status = document.getElementById('statusFilter').value;
+            
+            const filtered = allProviders.filter(provider => {
+                const matchesSearch = provider.name.toLowerCase().includes(search);
+                const matchesCategory = !category || provider.categoryKey === category;
+                const matchesStatus = !status || provider.status === status;
+                return matchesSearch && matchesCategory && matchesStatus;
+            });
+            
+            displayProviders(filtered);
+        }
+
+        function toggleCompareMode() {
+            compareMode = document.getElementById('compareMode').checked;
+            selectedProviders = [];
+            updateComparePanel();
+            displayProviders(allProviders);
+        }
+
+        function toggleSelection(providerName) {
+            if (selectedProviders.includes(providerName)) {
+                selectedProviders = selectedProviders.filter(p => p !== providerName);
+            } else {
+                if (selectedProviders.length < 5) {
+                    selectedProviders.push(providerName);
+                } else {
+                    alert('Maximum 5 providers can be compared');
+                }
+            }
+            updateComparePanel();
+            displayProviders(allProviders);
+        }
+
+        function updateComparePanel() {
+            const panel = document.getElementById('comparePanel');
+            const count = document.getElementById('compareCount');
+            count.textContent = `${selectedProviders.length} provider${selectedProviders.length !== 1 ? 's' : ''} selected`;
+            panel.className = selectedProviders.length > 0 ? 'compare-panel active' : 'compare-panel';
+        }
+
+        function clearComparison() {
+            selectedProviders = [];
+            updateComparePanel();
+            displayProviders(allProviders);
+        }
+
+        function compareProviders() {
+            if (selectedProviders.length < 2) {
+                alert('Select at least 2 providers to compare');
+                return;
+            }
+            
+            const providers = allProviders.filter(p => selectedProviders.includes(p.name));
+            const modal = document.getElementById('detailModal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+            
+            title.textContent = 'Provider Comparison';
+            body.innerHTML = `
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="border-bottom: 1px solid var(--border-color);">
+                        <th style="text-align: left; padding: 1rem;">Provider</th>
+                        ${providers.map(p => `<th style="padding: 1rem;">${p.name}</th>`).join('')}
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);">
+                        <td style="padding: 1rem; font-weight: 600;">Category</td>
+                        ${providers.map(p => `<td style="padding: 1rem; text-align: center;">${p.categoryName}</td>`).join('')}
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);">
+                        <td style="padding: 1rem; font-weight: 600;">Status</td>
+                        ${providers.map(p => `<td style="padding: 1rem; text-align: center;"><span class="status-badge status-${p.status}">${p.status}</span></td>`).join('')}
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--border-color);">
+                        <td style="padding: 1rem; font-weight: 600;">Total Files</td>
+                        ${providers.map(p => {
+                            const total = Object.values(p.folder_contents).reduce((sum, f) => sum + f.file_count, 0);
+                            return `<td style="padding: 1rem; text-align: center;">${total}</td>`;
+                        }).join('')}
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; font-weight: 600;">Research Docs</td>
+                        ${providers.map(p => `<td style="padding: 1rem; text-align: center;">${p.research_files.length}</td>`).join('')}
+                    </tr>
+                </table>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function showDetails(providerName) {
+            const provider = allProviders.find(p => p.name === providerName);
+            if (!provider) return;
+            
+            const modal = document.getElementById('detailModal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+            
+            title.textContent = provider.name;
+            
+            const folders = Object.entries(provider.folder_contents).map(([name, data]) => `
+                <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 0.5rem;">
+                    <span>${name.replace(/_/g, ' ')}</span>
+                    <span style="color: ${data.has_content ? 'var(--success)' : 'var(--text-muted)'};">
+                        ${data.file_count} files ${data.has_content ? '✓' : ''}
+                    </span>
+                </div>
+            `).join('');
+            
+            const research = provider.research_files.length > 0 ? `
+                <div style="margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">Research Analysis</h3>
+                    ${provider.research_files.map(r => `
+                        <div style="padding: 1rem; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 1rem;">
+                            <div style="font-weight: 600; margin-bottom: 0.5rem;">${r.filename}</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                                ${r.executive_summary ? r.executive_summary.substring(0, 300) + '...' : 'No summary available'}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : '';
+            
+            body.innerHTML = `
+                <div style="margin-bottom: 2rem;">
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">${provider.categoryName}</div>
+                    <div class="status-badge status-${provider.status}">${provider.status.replace('_', ' ')}</div>
+                </div>
+                
+                <h3 style="margin-bottom: 1rem;">Folder Contents</h3>
+                ${folders}
+                
+                ${research}
+                
+                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <a href="${provider.folder_path}" class="btn-small btn-primary-small" style="flex: 1;">Open Folder</a>
+                    <a href="https://github.com/JaZeR-444/ai-master-reference-guide" target="_blank" class="btn-small btn-secondary-small" style="flex: 1;">View on GitHub</a>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('detailModal').classList.remove('active');
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            
+            const btn = document.querySelector('.theme-toggle');
+            btn.textContent = newTheme === 'dark' ? '🌙 Dark' : '☀️ Light';
+            
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+        document.querySelector('.theme-toggle').textContent = savedTheme === 'dark' ? '🌙 Dark' : '☀️ Light';
+
+        // Initialize
+        loadProviders();
+
+        // Close modal on outside click
+        document.getElementById('detailModal').addEventListener('click', (e) => {
+            if (e.target.id === 'detailModal') closeModal();
+        });
+    </script>
+</body>
+</html>
