@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .web-login {
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .mobile-login {
+            width: 360px;
+            height: 700px;
+            border: 10px solid #333;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .screen {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .logo-area {
+            height: 80px;
+            width: 80px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .form-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        .input-field {
+            width: 100%;
+            height: 50px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        .btn {
+            width: 100%;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        
+        .divider {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #ccc;
+        }
+        
+        .divider::before {
+            left: 0;
+        }
+        
+        .divider::after {
+            right: 0;
+        }
+        
+        .social-btn {
+            width: 100%;
+            height: 50px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        
+        h2 {
+            margin: 10px 0;
+        }
+        
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Web Login -->
+        <div class="web-login">
+            <h2>Login</h2>
+            <div class="logo-area">Logo</div>
+            <div class="form-group">
+                <div class="input-field">Email or Username</div>
+            </div>
+            <div class="form-group">
+                <div class="input-field">Password</div>
+            </div>
+            <button class="btn">Sign In</button>
+            
+            <div class="divider">OR</div>
+            
+            <button class="social-btn">Continue with Google</button>
+            <button class="social-btn">Continue with Facebook</button>
+            
+            <p><a href="#">Forgot Password?</a> | <a href="#">Create Account</a></p>
+        </div>
+        
+        <!-- Mobile Login -->
+        <div class="mobile-login">
+            <div class="screen">
+                <h2>Login</h2>
+                <div class="logo-area">Logo</div>
+                <div class="form-group">
+                    <div class="input-field">Email or Username</div>
+                </div>
+                <div class="form-group">
+                    <div class="input-field">Password</div>
+                </div>
+                <button class="btn">Sign In</button>
+                
+                <div class="divider">OR</div>
+                
+                <button class="social-btn">Continue with Google</button>
+                <button class="social-btn">Continue with Facebook</button>
+                
+                <p><a href="#">Forgot Password?</a> | <a href="#">Create Account</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

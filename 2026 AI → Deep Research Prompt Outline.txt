@@ -1,0 +1,253 @@
+# 2026 AI Provider Deep Research Prompt
+
+## RESEARCH OBJECTIVES
+---
+
+## REQUIRED SECTIONS (DO NOT SKIP)
+
+---
+
+### 1. 🧭 Provider Overview & Positioning
+
+**1.1 One-Sentence Definition (Descriptive Only)**
+- What the provider does, stated factually
+- No superlatives, no evaluation, no future claims
+- 25 words max; if unknown, say "Unknown"
+
+**1.2 Problem Scope**
+- Problems the provider is designed to solve
+- Problems it is explicitly not designed to solve
+- Be concrete; avoid generic categories
+
+**1.3 Target User & Buyer**
+- Primary user persona(s)
+- Primary buyer (if different)
+- Who this is not built for
+- Use role/industry titles; avoid "everyone"
+
+**1.4 Ecosystem Placement**
+- Where the provider sits relative to adjacent tool categories
+- Upstream/downstream dependencies
+- No competitive judgment here
+- Name explicit inputs and outputs (data, formats, integrations)
+
+**1.5 Positioning Snapshot**
+- Core focus
+- Defining constraint
+- Implied tradeoff
+- 3-6 words each; no full sentences
+
+---
+
+### 2. 🧾 Model Catalog (Complete Inventory) **(REQUIRED)**
+
+**2.1 Inventory Table — Atomic Models Only**
+Each row represents a single, distinct model or deployable variant.
+Do not merge variants; list separate rows for size, precision, or context-window differences.
+
+Required columns:
+- Model Name (exact)
+- Family / Tier (only if explicitly named)
+- Primary Modality
+- Intended Use (provider-stated; label and cite)
+- Key Strengths (provider-stated or evidenced)
+- Key Constraints / Known Weaknesses
+- Availability (API / app / enterprise; public vs gated)
+- Status (GA / Beta / Preview / Deprecated)
+- Release / Last Update (YYYY-MM if known; else Unknown)
+- Sources (one+ per row)
+
+**2.2 Intent & Evidence Labeling**
+- Clearly distinguish provider-stated intent vs analyst inference
+- Explicitly label inferred intent
+- Use labels: [Stated] / [Inference]
+
+**2.3 Legacy / Deprecated Models**
+- Separate table
+- Same columns
+- Include replacement or deprecation signals if stated
+- Include deprecation date if provided
+
+**2.4 Coverage, Gaps, and Uncertainty**
+- Likely missing models
+- Reason for omissions (enterprise-only, undocumented, ambiguous branding)
+- Evidence required to confirm completeness
+- State confidence: High / Medium / Low
+
+**2.5 Catalog-Level Takeaway**
+- Maturity implications
+- Specialization vs generality
+- Maintenance velocity
+- One sentence max
+
+---
+
+### 3. 🧩 Core Capabilities & Modalities
+- Supported modalities
+- Key technical capabilities
+- Mapping of capabilities to models listed in Section 2
+- Known strengths and known gaps relevant to building and experimentation
+
+---
+
+### 4. 🏗️ Technical Architecture (High-Level)
+- Publicly known or reasonably inferred architecture details
+- Training approach (if disclosed)
+- Inference characteristics (latency, throughput, scaling assumptions)
+- Deployment model (API, hosted app, local, hybrid)
+
+Explicitly label what is **known**, **inferred**, or **unknown**.
+
+---
+
+### 5. 📏 Performance, Quality, and Benchmarks
+
+**5.1 Benchmark Availability & Scope**
+- Available benchmarks by name
+- Models each benchmark applies to
+- What each benchmark measures
+- Use a table if more than 3 benchmarks (Benchmark | Models | Metric | Source)
+
+**5.2 Benchmark Relevance Assessment**
+- Real-world behaviors correlated
+- What is not measured
+- Known biases or limitations
+- One bullet per benchmark; no blended claims
+
+**5.3 Real-World Performance Signals**
+- Credible user or deployment evidence
+- Distinguish isolated anecdotes from repeated patterns
+- Label source type: provider / third-party / user reports
+
+**5.4 Consistency & Failure Modes**
+- Common failure patterns
+- Stability across workloads
+- Edge cases where quality degrades
+- Tie failure modes to model and workload
+
+**5.5 Practical Performance Summary**
+- ✅ Reliable scenarios
+- ⚠️ Inconsistent scenarios
+- ❌ Inadequate scenarios  
+(tied to specific models where possible)
+- 2-4 bullets each; include model names and evidence tags
+
+---
+
+### 6. 💳 Pricing, Limits, and Economic Model
+- Pricing structure and tiers
+- Rate limits, quotas, and usage constraints
+- Cost predictability for experimentation and small-scale production
+- Cost-efficiency relative to comparable alternatives
+
+---
+
+### 7. 🛡️ Safety, Policy, and Governance
+- Content policies and enforcement mechanisms
+- Safety systems (if disclosed)
+- Constraints affecting experimentation or product building
+- Known incidents, controversies, or regulatory exposure
+
+---
+
+### 8. 🌍 Adoption, Ecosystem, and Real-World Usage
+- Evidence of real-world adoption
+- Production vs experimental usage signals
+- Notable case studies or public deployments
+- Gaps between claimed and observed adoption
+
+---
+
+### 9. 🥊 Competitive Landscape
+
+**9.1 Direct Competitors**
+- Explicit, realistic alternatives for the same primary use case
+- List 3-7 if possible; include open-source when relevant
+
+**9.2 Comparison Axes**
+Evaluate competitors across:
+- Model quality (Section 5)
+- Feature completeness (Section 3)
+- Pricing & cost predictability (Section 6)
+- Constraints & friction (Section 7)
+
+**9.3 High-Level Comparison Table**
+- Provider
+- Best Use Case
+- Clear Strength
+- Clear Weakness
+- Primary Risk
+- When to Prefer This Provider
+- Claims must be evidence-anchored; avoid generic adjectives
+
+**9.4 Where This Provider Wins**
+- Evidence-anchored scenarios of superiority
+- Include source tags or observed signals
+
+**9.5 Where This Provider Loses**
+- Evidence-anchored scenarios of inferiority
+- Include source tags or observed signals
+
+**9.6 Solo Builder “Avoid” Scenarios**
+- Specific cases where this provider is a poor choice
+- Include at least one pricing-driven and one capability-driven scenario
+- Make scenarios testable (clear trigger + outcome)
+
+---
+
+### 10. 🚨 Operational Risks, Unknowns, and Watch Areas
+- Technical and platform risks
+- Operational friction (outages, breaking changes)
+- Lock-in or migration concerns
+- Unknowns that could materially impact long-term usefulness
+
+---
+
+### 11. 🎯 Strategic Assessment (Personal Leverage Focused)
+
+**11.1 Final Verdict (Choose One)**
+- ⬤ Use
+- ⬤ Consider
+- ⬤ Avoid  
+(Select exactly one.)
+- Must align with Sections 5-7 and 10
+
+**11.2 Primary Justification**
+- 3–5 bullets referencing earlier sections
+- Include section refs in parentheses
+
+**11.3 Best-Fit Use Cases**
+- Narrow, leverage-driven solo builder scenarios
+- 2-4 bullets; include constraints
+
+**11.4 Poor-Fit / Anti-Use Cases**
+- At least one cost-driven and one capability-driven scenario
+- 2-4 bullets; mirror 11.3 format
+
+**11.5 Time-Horizon Outlook**
+- 0–12 months
+- 12–24 months
+- State expected direction and key triggers
+
+**11.6 Confidence Calibration**
+- Confidence: Low / Medium / High
+- Evidence that would increase confidence
+- Evidence that would reduce confidence
+- Name the biggest unknown
+
+---
+
+## SOURCE REQUIREMENTS
+- Prefer primary sources
+- Use credible third-party sources where necessary
+- Distinguish fact from inference
+- Cite sources inline or as a reference list
+
+---
+
+## OUTPUT FORMAT
+- Clear section headers
+- Emoji markers for scanability
+- Favor bullets and tables where specified
+- No marketing copy
+- No speculative hype

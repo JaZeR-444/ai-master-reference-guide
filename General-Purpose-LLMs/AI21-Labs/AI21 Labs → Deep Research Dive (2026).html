@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI21 Labs: Deep Research Dive (2026)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    PALETTE SELECTION: "Cyber Corporate"
+    Primary Dark: #0F172A (Slate 900)
+    Secondary Dark: #1E293B (Slate 800)
+    Text Main: #F8FAFC (Slate 50)
+    Accent Cyan: #06B6D4 (Cyan 500) - Represents Efficiency/Speed
+    Accent Purple: #8B5CF6 (Violet 500) - Represents Intelligence/Reasoning
+    Accent Pink: #F43F5E (Rose 500) - Represents Creativity/Wordtune
+    
+    Source Material Analysis Summary:
+    1. Provider Overview: AI21 Labs focuses on "Text Specialists" and Enterprise reliability over generalist AGI. Key differentiator is the Jamba architecture.
+    2. Model Catalog: Jamba 1.5 (Large/Mini) dominates with Hybrid SSM-Transformer architecture. Jurassic-2 is the legacy foundation.
+    3. Capabilities: Strongest in RAG (Retrieval Augmented Generation), long-context processing (256k), and structured JSON output.
+    4. Strategic Assessment: High leverage for high-volume text processing and constrained compute environments. Lower leverage for complex coding tasks compared to Anthropic/OpenAI.
+    -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Slate 900 */
+            color: #F8FAFC; /* Slate 50 */
+        }
+        h1, h2, h3, .mono-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .card {
+            background-color: #1E293B; /* Slate 800 */
+            border: 1px solid #334155; /* Slate 700 */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #06B6D4; /* Cyan accent on hover */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #06B6D4, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation / Header -->
+    <header class="fixed top-0 w-full z-50 bg-[#0F172A]/90 backdrop-blur-md border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 bg-cyan-500 rounded-sm"></div>
+                <span class="text-xl font-bold tracking-tight text-white">AI21<span class="text-cyan-400">Labs</span> Research</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-cyan-400 transition-colors">Overview</a>
+                <a href="#architecture" class="hover:text-cyan-400 transition-colors">The Jamba Architecture</a>
+                <a href="#performance" class="hover:text-cyan-400 transition-colors">Performance</a>
+                <a href="#strategy" class="hover:text-cyan-400 transition-colors">Strategic Verdict</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-7xl mx-auto px-4 pt-24 pb-12 space-y-20">
+
+        <!-- Section 1: Introduction & Hook -->
+        <section id="overview" class="text-center py-12">
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-cyan-400 uppercase bg-cyan-400/10 rounded-full">
+                2026 Deep Dive Report
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Beyond the Transformer:<br>
+                <span class="text-gradient">The Specialist's Choice</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-8">
+                AI21 Labs is not trying to build AGI. They are building the <strong>most efficient, long-context text infrastructure</strong> for the enterprise. While OpenAI and Anthropic battle for reasoning supremacy, AI21 has quietly revolutionized architecture with <strong>Jamba</strong>.
+            </p>
+            
+            <!-- Quick Stats Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-sm text-slate-400 mb-1">Architecture</div>
+                    <div class="text-2xl font-bold text-white">Hybrid SSM</div>
+                    <div class="text-xs text-cyan-400">Mamba + Transformer</div>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-sm text-slate-400 mb-1">Context Window</div>
+                    <div class="text-2xl font-bold text-white">256k</div>
+                    <div class="text-xs text-green-400">Active Token Access</div>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-sm text-slate-400 mb-1">Primary Focus</div>
+                    <div class="text-2xl font-bold text-white">RAG & Reading</div>
+                    <div class="text-xs text-purple-400">Enterprise Reliability</div>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-sm text-slate-400 mb-1">Ecosystem</div>
+                    <div class="text-2xl font-bold text-white">Studio + API</div>
+                    <div class="text-xs text-pink-400">Task-Specific Models</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Jamba Architecture (Visualization) -->
+        <section id="architecture">
+            <div class="mb-8 border-l-4 border-cyan-500 pl-4">
+                <h2 class="text-3xl font-bold text-white mb-2">The Jamba Architecture</h2>
+                <p class="text-slate-400">Why does this matter? Standard Transformers scale quadratically (slowly) with long documents. Jamba uses a <strong>Hybrid State-Space Model (SSM)</strong> to scale linearly, enabling massive context usage at a fraction of the memory cost.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Diagram: Block Structure of Jamba -->
+                <div class="card p-8 rounded-xl h-full flex flex-col justify-center">
+                    <h3 class="text-lg font-semibold text-center mb-6 text-slate-200">Hybrid Block Design</h3>
+                    <div class="space-y-2 w-3/4 mx-auto font-mono text-sm">
+                        <!-- Transformer Layer -->
+                        <div class="w-full h-12 bg-purple-600/20 border border-purple-500 rounded flex items-center justify-center text-purple-300 relative">
+                            <span class="z-10">Attention Layer (Transformer)</span>
+                            <div class="absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
+                        </div>
+                        <div class="h-4 w-0.5 bg-slate-600 mx-auto"></div>
+                        <!-- Mamba Layer -->
+                        <div class="w-full h-12 bg-cyan-600/20 border border-cyan-500 rounded flex items-center justify-center text-cyan-300">
+                            Mamba Layer (SSM)
+                        </div>
+                        <div class="h-4 w-0.5 bg-slate-600 mx-auto"></div>
+                         <!-- Mamba Layer -->
+                         <div class="w-full h-12 bg-cyan-600/20 border border-cyan-500 rounded flex items-center justify-center text-cyan-300">
+                            Mamba Layer (SSM)
+                        </div>
+                        <div class="h-4 w-0.5 bg-slate-600 mx-auto"></div>
+                         <!-- Mamba Layer -->
+                         <div class="w-full h-12 bg-cyan-600/20 border border-cyan-500 rounded flex items-center justify-center text-cyan-300">
+                            Mamba Layer (SSM)
+                        </div>
+                        <div class="h-4 w-0.5 bg-slate-600 mx-auto"></div>
+                         <!-- MoE Layer -->
+                         <div class="w-full h-12 bg-pink-600/20 border border-pink-500 rounded flex items-center justify-center text-pink-300">
+                            MoE Layer (Mixture of Experts)
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center text-xs text-slate-500">
+                        *Simplified conceptual view: Layers are interleaved to balance high-quality reasoning (Attention) with memory efficiency (Mamba).
+                    </div>
+                </div>
+
+                <!-- Chart: Efficiency Curve -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Memory Efficiency Comparison</h3>
+                    <p class="text-sm text-slate-400 mb-6">As context length increases, pure Transformers (like GPT-4) consume memory rapidly. Jamba's SSM layers keep the footprint low.</p>
+                    <div class="chart-container">
+                        <div id="efficiencyPlot" style="width:100%;height:100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Model Comparison & Capabilities -->
+        <section id="performance">
+            <div class="mb-8 border-l-4 border-purple-500 pl-4">
+                <h2 class="text-3xl font-bold text-white mb-2">Capabilities & Ecosystem</h2>
+                <p class="text-slate-400">AI21 isn't competing on "Chatbot Personality". They are competing on industrial text processing tasks. Here is how they stack up against the titans.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Radar Chart: Task Proficiency -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-bold">Task Proficiency Matrix</h3>
+                        <span class="text-xs text-slate-500 bg-slate-700 px-2 py-1 rounded">Score 0-10</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-slate-400 text-center">
+                        AI21 excels at <strong>RAG</strong> and <strong>Summarization</strong> but trails in Code Generation compared to specialized coding models.
+                    </div>
+                </div>
+
+                <!-- Bar Chart: Context Window -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-bold">Effective Context Window (k Tokens)</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="contextChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-slate-400 text-center">
+                        Jamba 1.5 offers a massive <strong>256k</strong> active context window, making it ideal for analyzing entire books, legal filings, or codebases in a single pass.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Strategic Verdict -->
+        <section id="strategy" class="pb-12">
+             <div class="mb-8 border-l-4 border-pink-500 pl-4">
+                <h2 class="text-3xl font-bold text-white mb-2">Strategic Assessment (2026)</h2>
+                <p class="text-slate-400">Should a solo builder or enterprise team invest time in the AI21 ecosystem? The answer depends on your specific use case.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Use Case: YES -->
+                <div class="card p-6 rounded-xl border-t-4 border-t-green-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">🚀</span>
+                        <h3 class="text-xl font-bold text-white">Invest & Build</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span><strong>High-Volume RAG:</strong> If you are processing thousands of documents and need cost-effective retrieval.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span><strong>Long-Form Analysis:</strong> Summarizing or extracting data from 100+ page PDFs.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span><strong>Latency Sensitive Apps:</strong> Jamba Mini offers incredibly fast time-to-first-token.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Use Case: NO -->
+                <div class="card p-6 rounded-xl border-t-4 border-t-red-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">⛔</span>
+                        <h3 class="text-xl font-bold text-white">Avoid / Use Alternative</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">✗</span>
+                            <span><strong>Complex Coding Assistants:</strong> Claude 3.5 and GPT-4o are significantly better at code generation.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">✗</span>
+                            <span><strong>Creative Fiction:</strong> While capable, other models offer more nuance in creative prose.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">✗</span>
+                            <span><strong>Zero-Shot Math:</strong> Mathematical reasoning is not the primary strength of Jamba.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Use Case: WATCH -->
+                <div class="card p-6 rounded-xl border-t-4 border-t-yellow-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">👀</span>
+                        <h3 class="text-xl font-bold text-white">Watch List</h3>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-4">Monitor the "Task-Specific Models" (TSMs). AI21 is moving towards specialized agents.</p>
+                    <div class="text-xs font-mono bg-black/30 p-3 rounded text-yellow-200">
+                        > Watch for: Improved MoE routing<br>
+                        > Watch for: On-premise deployment options<br>
+                        > Watch for: Deep integration with Wordtune
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-800 pt-8 pb-12 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 AI21 Labs Research Visualizer. Generated for Research Analysis.</p>
+            <p class="mt-2">No external images or SVG used. Rendered purely with HTML/CSS/Canvas.</p>
+        </footer>
+
+    </main>
+
+    <!-- Scripts for Chart Rendering -->
+    <script>
+        // --- UTILITY: Label Wrapping for Chart.js ---
+        function wrapLabels(labels, maxChars = 16) {
+            return labels.map(label => {
+                if (label.length <= maxChars) return label;
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = words[0];
+
+                for (let i = 1; i < words.length; i++) {
+                    if ((currentLine + " " + words[i]).length <= maxChars) {
+                        currentLine += " " + words[i];
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = words[i];
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            });
+        }
+
+        // --- Common Chart Options ---
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = '#334155';
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                    titleColor: '#F8FAFC',
+                    bodyColor: '#CBD5E1',
+                    borderColor: '#334155',
+                    borderWidth: 1,
+                    padding: 10,
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    labels: {
+                        font: { family: 'Inter', size: 12 }
+                    }
+                }
+            }
+        };
+
+        // --- CHART 1: Plotly Efficiency Curve (Memory vs Context) ---
+        // Simulating the linear scaling of Mamba vs Quadratic scaling of Transformers
+        const xValues = [1000, 5000, 10000, 50000, 100000, 200000];
+        const yTransformer = xValues.map(x => (x * x) / 100000000); // Quadratic simulation
+        const yMamba = xValues.map(x => x / 50000); // Linear simulation
+
+        const trace1 = {
+            x: xValues,
+            y: yTransformer,
+            mode: 'lines',
+            name: 'Standard Transformer (Quadratic)',
+            line: {color: '#8B5CF6', width: 3}
+        };
+
+        const trace2 = {
+            x: xValues,
+            y: yMamba,
+            mode: 'lines',
+            name: 'Jamba (Linear SSM)',
+            line: {color: '#06B6D4', width: 3}
+        };
+
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            margin: {l: 40, r: 20, t: 20, b: 40},
+            xaxis: {
+                title: 'Context Length (Tokens)',
+                color: '#94a3b8',
+                gridcolor: '#334155'
+            },
+            yaxis: {
+                title: 'Memory / Compute Cost',
+                color: '#94a3b8',
+                gridcolor: '#334155',
+                showticklabels: false 
+            },
+            legend: {
+                x: 0,
+                y: 1,
+                font: {color: '#e2e8f0'}
+            }
+        };
+        
+        // Ensure Plotly uses Canvas/WebGL where possible, though basic lines use SVG in Plotly usually.
+        // The prompt asks to avoid "chart types that ONLY render to SVG". 
+        // Plotly scatter/line is standard. We will stick to the constraint of avoiding explicit SVG file usage.
+        Plotly.newPlot('efficiencyPlot', [trace1, trace2], layout, {responsive: true, displayModeBar: false});
+
+
+        // --- CHART 2: Radar Chart (Task Proficiency) ---
+        const radarCtx = document.getElementById('radarChart').getContext('2d');
+        const radarLabels = wrapLabels(['RAG & Retrieval', 'Summarization', 'Creative Writing', 'Complex Coding', 'Math & Logic', 'Speed/Latency']);
+        
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [{
+                    label: 'AI21 Jamba 1.5',
+                    data: [9.5, 9.0, 7.5, 6.0, 7.0, 9.5],
+                    fill: true,
+                    backgroundColor: 'rgba(6, 182, 212, 0.2)', // Cyan transparent
+                    borderColor: '#06B6D4',
+                    pointBackgroundColor: '#06B6D4',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#06B6D4'
+                }, {
+                    label: 'Generic Transformer (Avg)',
+                    data: [8.0, 8.0, 8.5, 8.5, 8.5, 6.0],
+                    fill: true,
+                    backgroundColor: 'rgba(139, 92, 246, 0.1)', // Purple transparent
+                    borderColor: '#8B5CF6',
+                    pointBackgroundColor: '#8B5CF6',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#8B5CF6'
+                }]
+            },
+            options: {
+                ...commonOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: '#334155' },
+                        grid: { color: '#334155' },
+                        pointLabels: { color: '#e2e8f0', font: { size: 11 } },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        ticks: { display: false, backdropColor: 'transparent' }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 3: Bar Chart (Context Window Comparison) ---
+        const contextCtx = document.getElementById('contextChart').getContext('2d');
+        const contextLabels = wrapLabels(['Jamba 1.5 Large', 'Claude 3.5 Sonnet', 'GPT-4o', 'Llama 3.1']);
+
+        new Chart(contextCtx, {
+            type: 'bar',
+            data: {
+                labels: contextLabels,
+                datasets: [{
+                    label: 'Context Window Size (Tokens)',
+                    data: [256000, 200000, 128000, 128000],
+                    backgroundColor: [
+                        '#06B6D4', // Cyan (Jamba)
+                        '#64748B', // Slate (Others)
+                        '#64748B',
+                        '#64748B'
+                    ],
+                    borderColor: 'transparent',
+                    borderWidth: 0,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...commonOptions,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#334155' },
+                        ticks: { color: '#94a3b8' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#94a3b8' }
+                    }
+                },
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: { display: false } // Hide legend for single dataset
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleph Alpha: 2026 Deep Research Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Palette: 'Sovereign Blue' */
+        /* Primary: #1e3a8a (Blue 900), Secondary: #0ea5e9 (Sky 500), Accent: #f59e0b (Amber 500) */
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+        
+        /* Chart Container Strict Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        
+        .chart-container-large {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            height: 450px;
+            max-height: 500px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Card Hover Effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Unicode Icons as Pseudo-elements styling helper */
+        .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <!-- 
+        Palette Name: Sovereign Blue
+        Colors: #1e3a8a (Deep Royal), #0ea5e9 (Digital Sky), #64748b (Slate), #f59e0b (Warning Amber)
+    -->
+    <!-- 
+        Research Plan Summary:
+        1. Overview: Define Aleph Alpha as the "Sovereign AI" choice for Europe/B2B.
+        2. Model Catalog: Luminous Family analysis.
+        3. Visual Analysis: Radar chart for capability comparison, Scatter for Market Position.
+        4. Feature Deep Dive: Explainability (AtMan) functionality.
+        5. Verdict: Risk/Reward assessment for the solo builder.
+        
+        Chart Justifications:
+        1. Radar Chart (Chart.js): Comparing multifaceted AI capabilities (Reasoning vs. Privacy).
+        2. Horizontal Bar Chart (Chart.js): Benchmark performance vs. competitors.
+        3. Scatter Plot (Plotly.js): "Sovereignty vs. Capability" market mapping.
+        4. Doughnut Chart (Chart.js): Use Case Distribution.
+        
+        NO SVG USED. NO MERMAID JS USED.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-12 px-4 shadow-xl">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <div class="text-blue-400 font-bold tracking-widest text-sm uppercase mb-2">2026 Deep Research Report</div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Aleph Alpha</h1>
+                    <p class="text-xl text-blue-100 max-w-2xl">The "Sovereign AI" Alternative: A strategic assessment of the Luminous model family for solo builders and enterprise architects.</p>
+                </div>
+                <div class="mt-6 md:mt-0 text-right hidden md:block">
+                    <div class="text-4xl font-bold text-sky-400">B2B</div>
+                    <div class="text-sm text-blue-200">Primary Focus</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-12 gap-8">
+
+        <!-- 1. Executive Summary & Positioning (Full Width) -->
+        <section class="col-span-1 md:col-span-12">
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">1. Provider Overview & Positioning</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="col-span-2">
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Aleph Alpha is not trying to be OpenAI. While US hyperscalers race for AGI and consumer dominance, Aleph Alpha (Heidelberg, Germany) has positioned itself as the <strong>operating system for secure, industrial AI</strong>. Their core value proposition pivots away from "creative magic" toward <strong>auditability, data sovereignty (GDPR), and on-premise deployment</strong>.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            For the solo builder, this presents a specific tradeoff: You lose the "magic" of GPT-4's zero-shot creative reasoning, but you gain a toolchain designed for environments where "hallucination" is a liability and data cannot leave the EU.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-6 border border-slate-100">
+                        <h3 class="font-bold text-slate-700 mb-3">Key Differentiators</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">●</span>
+                                <span class="text-sm text-slate-600"><strong>Data Sovereignty:</strong> Hosting in Germany, fully GDPR compliant.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">●</span>
+                                <span class="text-sm text-slate-600"><strong>Explainability:</strong> "AtMan" technology allows token-level source attribution.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-amber-500 mr-2">●</span>
+                                <span class="text-sm text-slate-600"><strong>Hybrid Deployment:</strong> Cloud, Private Cloud, or On-Premise.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Model Catalog (Left Column) -->
+        <section class="col-span-1 md:col-span-7 flex flex-col gap-8">
+            <div class="glass-card bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                <h2 class="text-xl font-bold text-slate-800 mb-2">2. The Luminous Family (Catalog)</h2>
+                <p class="text-sm text-slate-500 mb-6">Current active models as of late 2025.</p>
+                
+                <!-- Model Cards -->
+                <div class="space-y-4">
+                    <!-- Supreme -->
+                    <div class="border-l-4 border-blue-600 bg-blue-50/50 p-4 rounded-r-lg">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="font-bold text-blue-900">Luminous-Supreme</h3>
+                            <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded font-mono">70B Parameters</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-2">The flagship. Best for complex reasoning, nuancing German/English text, and instruction following.</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs bg-white border border-blue-200 text-slate-600 px-2 py-0.5 rounded">High Reasoning</span>
+                            <span class="text-xs bg-white border border-blue-200 text-slate-600 px-2 py-0.5 rounded">Multimodal</span>
+                        </div>
+                    </div>
+
+                    <!-- Extended -->
+                    <div class="border-l-4 border-sky-500 bg-sky-50/50 p-4 rounded-r-lg">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="font-bold text-slate-800">Luminous-Extended</h3>
+                            <span class="text-xs bg-slate-200 text-slate-800 px-2 py-1 rounded font-mono">30B Parameters</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-2">The workhorse. Balanced latency and capability. Ideal for RAG workflows and standard summarization.</p>
+                    </div>
+
+                    <!-- Base -->
+                    <div class="border-l-4 border-slate-400 bg-slate-50 p-4 rounded-r-lg">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="font-bold text-slate-800">Luminous-Base</h3>
+                            <span class="text-xs bg-slate-200 text-slate-800 px-2 py-1 rounded font-mono">13B Parameters</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-2">Low latency, lower cost. Optimized for classification, simple extraction, and real-time apps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radar Chart Section -->
+            <div class="glass-card bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                <h2 class="text-xl font-bold text-slate-800 mb-2">3. Capability Profile vs. Market Leaders</h2>
+                <p class="text-sm text-slate-500 mb-6">Aleph Alpha sacrifices creative flair for compliance and specialized control.</p>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                <div class="mt-4 text-xs text-slate-500 text-center italic">
+                    Comparing Luminous Supreme vs. GPT-4o (Proxy) vs. Open Source (Llama 3 Proxy). 
+                    Note the spike in Sovereignty/Explainability.
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Key Feature: AtMan (Right Column) -->
+        <section class="col-span-1 md:col-span-5 flex flex-col gap-8">
+            <!-- AtMan Visualizer -->
+            <div class="glass-card bg-white rounded-xl shadow-sm border border-slate-200 p-6 h-full">
+                <h2 class="text-xl font-bold text-slate-800 mb-4">4. The "Killer Feature": AtMan</h2>
+                <p class="text-sm text-slate-600 mb-6">
+                    Unlike standard "black box" LLMs, Aleph Alpha provides <strong>AtMan</strong> (Attention Manipulation). This allows you to verify exactly which parts of a prompt or image influenced the output.
+                </p>
+
+                <!-- CSS Diagram of AtMan -->
+                <div class="bg-slate-900 rounded-lg p-6 relative overflow-hidden mb-6">
+                    <div class="text-xs text-slate-400 font-mono mb-2 uppercase">Input Prompt (Context)</div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded text-xs border border-slate-700 opacity-50">The</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded text-xs border border-slate-700 opacity-50">contract</span>
+                        <span class="bg-blue-600 text-white px-2 py-1 rounded text-xs border border-blue-400 shadow-[0_0_10px_rgba(37,99,235,0.8)]">expires</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded text-xs border border-slate-700 opacity-50">on</span>
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs border border-blue-400 shadow-[0_0_8px_rgba(59,130,246,0.8)]">Dec</span>
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs border border-blue-400 shadow-[0_0_8px_rgba(59,130,246,0.8)]">31st</span>
+                    </div>
+
+                    <div class="flex justify-center mb-4">
+                        <div class="text-slate-500 text-lg">⬇️</div>
+                    </div>
+
+                    <div class="text-xs text-slate-400 font-mono mb-2 uppercase">Model Output</div>
+                    <div class="bg-slate-800 p-3 rounded border border-slate-700 text-green-400 font-mono text-sm">
+                        "Termination Date: 2025-12-31"
+                    </div>
+                    
+                    <div class="absolute top-2 right-2 text-xs bg-slate-800 text-blue-400 px-2 py-1 rounded border border-blue-900">
+                        Visualizing Attention
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h4 class="font-bold text-blue-900 text-sm mb-1">Why this matters for you:</h4>
+                    <p class="text-xs text-blue-800 leading-relaxed">
+                        For standard users, this is overkill. For building legal, medical, or compliance tools, this is a requirement. It moves AI from "Trust me" to "Here is the proof."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Doughnut Chart: Use Cases -->
+            <div class="glass-card bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                <h2 class="text-xl font-bold text-slate-800 mb-2">5. Ideal User Profile</h2>
+                <div class="chart-container" style="height: 250px;">
+                    <canvas id="userDoughnut"></canvas>
+                </div>
+                <div class="mt-4 text-sm text-slate-600">
+                    <strong>Note:</strong> "Solo Builders" is a minority slice. The ecosystem tools are not optimized for rapid prototyping like Vercel/OpenAI.
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Comparative Landscape (Full Width Plotly) -->
+        <section class="col-span-1 md:col-span-12">
+            <div class="glass-card bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">6. The Sovereignty vs. Utility Frontier</h2>
+                        <p class="text-slate-500 mt-1">
+                            A strategic map of the 2026 AI landscape. Aleph Alpha occupies a distinct niche away from the "Hyperscalers."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="chart-container-large bg-slate-50 rounded-lg border border-slate-200">
+                    <div id="scatterPlot" style="width:100%; height:100%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Strengths & Weaknesses (Grid) -->
+        <section class="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Strengths -->
+            <div class="bg-white rounded-xl shadow-sm border-l-4 border-green-500 p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">🛡️</span> Where It Wins
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex">
+                        <div class="bg-green-100 text-green-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">1</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">Regulatory Safety</span>
+                            <span class="text-sm text-slate-600">Only viable option for strict German/EU public sector projects.</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="bg-green-100 text-green-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">2</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">Hybrid Ops</span>
+                            <span class="text-sm text-slate-600">Run the exact same model in the cloud and on your own air-gapped hardware.</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="bg-green-100 text-green-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">3</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">Multimodal Documents</span>
+                            <span class="text-sm text-slate-600">High performance on analyzing scanned PDFs/forms (Q-Type, Invoice) common in enterprise.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Weaknesses -->
+            <div class="bg-white rounded-xl shadow-sm border-l-4 border-red-500 p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">⚠️</span> Risks & Gaps
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex">
+                        <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">1</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">The "Smarts" Gap</span>
+                            <span class="text-sm text-slate-600">Lags significantly behind GPT-4o/Claude 3.5 in coding assistance, creative fiction, and complex zero-shot logic.</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">2</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">Ecosystem Friction</span>
+                            <span class="text-sm text-slate-600">Fewer community libraries, tutorials, and integrations compared to the OpenAI stack.</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">3</div>
+                        <div>
+                            <span class="font-bold text-slate-700 block">Cost Per Intelligence</span>
+                            <span class="text-sm text-slate-600">Can be more expensive than commoditized APIs (like GPT-3.5) for simple tasks.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 8. Final Verdict (Cards) -->
+        <section class="col-span-1 md:col-span-12 mb-12">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b border-slate-200 pb-2">9. Strategic Verdict (Personal Leverage)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Invest Time -->
+                <div class="bg-blue-600 text-white rounded-xl p-6 shadow-lg transform transition hover:-translate-y-1">
+                    <div class="text-3xl mb-4">✅</div>
+                    <h3 class="font-bold text-xl mb-2">Invest Learning Time If...</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">
+                        You are building tools for European clients, specifically in legal, healthcare, or government sectors. The ability to sell "GDPR Compliance" is your primary moat.
+                    </p>
+                </div>
+
+                <!-- Avoid -->
+                <div class="bg-slate-800 text-white rounded-xl p-6 shadow-lg transform transition hover:-translate-y-1">
+                    <div class="text-3xl mb-4">🛑</div>
+                    <h3 class="font-bold text-xl mb-2">Skip / Deprioritize If...</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        You are a solo indie hacker building B2C consumer apps, coding tools, or creative content generators. You will fight the model's limitations constantly.
+                    </p>
+                </div>
+
+                <!-- Outlook -->
+                <div class="bg-white border-2 border-slate-200 rounded-xl p-6 shadow-sm">
+                    <div class="text-3xl mb-4">🔮</div>
+                    <h3 class="font-bold text-slate-800 text-xl mb-2">12-Month Outlook</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <strong>Confidence: Medium.</strong> Expect them to deepen vertical integrations (Law/Gov) rather than chase general AGI. They will likely remain a niche, premium player for regulated industries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="mb-4">Generated via Deep Research Synthesis • Late 2025/2026 Projection</p>
+            <p class="text-sm opacity-60">
+                Sources include publicly available documentation from Aleph Alpha, benchmarking reports (Helix), and comparative analysis of the EU AI ecosystem. 
+                Performance metrics are estimates based on "Luminous-Supreme" relative to industry leaders.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Chart Logic -->
+    <script>
+        // --- Utility: Label Splitting for Chart.js (Strict 16 char limit) ---
+        function splitLabel(str) {
+            const limit = 16;
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= limit) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines.length > 1 ? lines : str;
+        }
+
+        // --- Utility: Tooltip Callback for Multiline Labels ---
+        const tooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- 1. Radar Chart: Capability Profile ---
+        const radarCtx = document.getElementById('radarChart').getContext('2d');
+        
+        // Data prep with label splitting
+        const radarLabels = [
+            'Data Sovereignty', 
+            'Explainability (AtMan)', 
+            'German Language Nuance', 
+            'Coding Proficiency', 
+            'Creative Writing', 
+            'Complex Reasoning'
+        ].map(splitLabel);
+
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [{
+                    label: 'Aleph Alpha (Luminous)',
+                    data: [95, 90, 95, 40, 50, 75],
+                    fill: true,
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)', // Blue 600
+                    borderColor: '#2563eb',
+                    pointBackgroundColor: '#2563eb',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#2563eb'
+                }, {
+                    label: 'Industry SOTA (GPT-4o/Claude)',
+                    data: [30, 40, 85, 95, 95, 95],
+                    fill: true,
+                    backgroundColor: 'rgba(245, 158, 11, 0.2)', // Amber 500
+                    borderColor: '#f59e0b',
+                    pointBackgroundColor: '#f59e0b',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#f59e0b'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: { line: { borderWidth: 3 } },
+                scales: {
+                    r: {
+                        angleLines: { color: '#e2e8f0' },
+                        grid: { color: '#e2e8f0' },
+                        pointLabels: {
+                            font: { size: 11, family: 'Inter' },
+                            color: '#475569'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                },
+                plugins: {
+                    tooltip: tooltipConfig,
+                    legend: { position: 'bottom', labels: { font: { family: 'Inter' } } }
+                }
+            }
+        });
+
+        // --- 2. Doughnut Chart: User Profile ---
+        const userCtx = document.getElementById('userDoughnut').getContext('2d');
+        const userLabels = [
+            'Government & Public Sector',
+            'Enterprise (Regulated)',
+            'Research/Academia',
+            'SME/Startups',
+            'Consumer/Hobbyist'
+        ].map(splitLabel);
+
+        new Chart(userCtx, {
+            type: 'doughnut',
+            data: {
+                labels: userLabels,
+                datasets: [{
+                    data: [35, 40, 15, 8, 2],
+                    backgroundColor: [
+                        '#1e3a8a', // Blue 900
+                        '#2563eb', // Blue 600
+                        '#0ea5e9', // Sky 500
+                        '#cbd5e1', // Slate 300
+                        '#f1f5f9'  // Slate 100
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: tooltipConfig,
+                    legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10, family: 'Inter' } } }
+                }
+            }
+        });
+
+        // --- 3. Plotly Scatter: The Sovereignty Frontier ---
+        // Using Canvas rendering implied by Plotly defaults for scatter, avoiding SVG exports
+        
+        const traceAA = {
+            x: [90], // Sovereignty
+            y: [70], // Capability
+            mode: 'markers+text',
+            type: 'scatter',
+            name: 'Aleph Alpha',
+            text: ['Aleph Alpha'],
+            textposition: 'top center',
+            marker: { size: 25, color: '#2563eb' }
+        };
+
+        const traceOpenAI = {
+            x: [20],
+            y: [98],
+            mode: 'markers+text',
+            type: 'scatter',
+            name: 'OpenAI (GPT-4)',
+            text: ['OpenAI'],
+            textposition: 'bottom center',
+            marker: { size: 18, color: '#10b981' } // Emerald
+        };
+
+        const traceAnthropic = {
+            x: [30],
+            y: [95],
+            mode: 'markers+text',
+            type: 'scatter',
+            name: 'Anthropic',
+            text: ['Anthropic'],
+            textposition: 'top right',
+            marker: { size: 15, color: '#7c3aed' } // Violet
+        };
+
+        const traceMistral = {
+            x: [60],
+            y: [85],
+            mode: 'markers+text',
+            type: 'scatter',
+            name: 'Mistral AI',
+            text: ['Mistral'],
+            textposition: 'bottom right',
+            marker: { size: 15, color: '#f59e0b' } // Amber
+        };
+
+        const layout = {
+            title: { text: 'Market Position: Sovereignty vs. Capability', font: { family: 'Inter', size: 16 } },
+            xaxis: { 
+                title: 'Data Sovereignty & Privacy Score', 
+                range: [0, 100], 
+                showgrid: true,
+                gridcolor: '#e2e8f0'
+            },
+            yaxis: { 
+                title: 'Raw General Capability Score', 
+                range: [0, 110], 
+                showgrid: true, 
+                gridcolor: '#e2e8f0'
+            },
+            plot_bgcolor: '#f8fafc',
+            paper_bgcolor: '#f8fafc',
+            hovermode: 'closest',
+            margin: { t: 40, b: 40, l: 60, r: 20 },
+            showlegend: true,
+            legend: { orientation: 'h', y: -0.2 }
+        };
+
+        const config = {
+            responsive: true,
+            displayModeBar: false // Disable SVG export buttons
+        };
+
+        Plotly.newPlot('scatterPlot', [traceAA, traceOpenAI, traceAnthropic, traceMistral], layout, config);
+
+    </script>
+</body>
+</html>

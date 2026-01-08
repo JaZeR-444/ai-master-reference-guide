@@ -1,0 +1,3699 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-08T01:46:56.532596",
+    "total_providers": 66,
+    "completed_count": 43,
+    "in_progress_count": 0,
+    "not_started_count": 23
+  },
+  "categories": [
+    {
+      "name": "3D-and-World-Generation",
+      "display_name": "3D / World / Asset Generation",
+      "provider_count": 4,
+      "completed_count": 0,
+      "providers": [
+        {
+          "name": "Kaedim",
+          "folder_path": "3D-and-World-Generation/Kaedim",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\3D-and-World-Generation\\Kaedim",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Meshy",
+          "folder_path": "3D-and-World-Generation/Meshy",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\3D-and-World-Generation\\Meshy",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "NVIDIA-Omniverse",
+          "folder_path": "3D-and-World-Generation/NVIDIA-Omniverse",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\3D-and-World-Generation\\NVIDIA-Omniverse",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Spline",
+          "folder_path": "3D-and-World-Generation/Spline",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\3D-and-World-Generation\\Spline",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        }
+      ]
+    },
+    {
+      "name": "Creative-and-Productivity-Apps",
+      "display_name": "Creative / Productivity Apps with AI",
+      "provider_count": 5,
+      "completed_count": 1,
+      "providers": [
+        {
+          "name": "Canva",
+          "folder_path": "Creative-and-Productivity-Apps/Canva",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Creative-and-Productivity-Apps\\Canva",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Descript",
+          "folder_path": "Creative-and-Productivity-Apps/Descript",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Creative-and-Productivity-Apps\\Descript",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Figma",
+          "folder_path": "Creative-and-Productivity-Apps/Figma",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Creative-and-Productivity-Apps\\Figma",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Notion",
+          "folder_path": "Creative-and-Productivity-Apps/Notion",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Creative-and-Productivity-Apps\\Notion",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Tome",
+          "folder_path": "Creative-and-Productivity-Apps/Tome",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Creative-and-Productivity-Apps\\Tome",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        }
+      ]
+    },
+    {
+      "name": "General-Purpose-LLMs",
+      "display_name": "General-Purpose LLMs",
+      "provider_count": 17,
+      "completed_count": 17,
+      "providers": [
+        {
+          "name": "AI21-Labs",
+          "folder_path": "General-Purpose-LLMs/AI21-Labs",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\AI21-Labs",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_AI21-Labs_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_AI21-Labs_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:08:15.215789",
+              "executive_summary": "**AI21 Labs** is an Israeli AI research lab and product company that distinguishes itself through a focus on **architecture innovation** (specifically State-Space Models or SSMs) and **application-layer utility** (via Wordtune).\n\nUnlike OpenAI or Anthropic, which chase \"AGI\" through massive scaling ...",
+              "strategic_assessment": "Ignore Jurassic-2. Treat AI21 Labs as \"The Jamba Company.\"",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:08:15.215789"
+        },
+        {
+          "name": "Aleph-Alpha",
+          "folder_path": "General-Purpose-LLMs/Aleph-Alpha",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Aleph-Alpha",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Aleph-Alpha_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Aleph-Alpha_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:11:45.025862",
+              "executive_summary": "**Aleph Alpha** is a German AI research company positioning itself as the \"Sovereign AI\" provider for Europe. Unlike US-based competitors focusing on AGI or consumer chatbots, Aleph Alpha is laser-focused on **B2B/Enterprise/Government** sectors where **data sovereignty, explainability, and regulato...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:11:45.025862"
+        },
+        {
+          "name": "Alibaba",
+          "folder_path": "General-Purpose-LLMs/Alibaba",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Alibaba",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Alibaba_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Alibaba_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:13:23.294782",
+              "executive_summary": "**Alibaba Cloud (Tongyi Qianwen / Qwen)** has rapidly emerged as the **king of open weights** for the 2024-2025 cycle. While US labs (OpenAI, Anthropic) have closed their models, Alibaba has taken the strategic route of releasing near-GPT-4 class models (Qwen 2.5) with permissive licenses (Apache 2....",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:13:23.294782"
+        },
+        {
+          "name": "Anthropic",
+          "folder_path": "General-Purpose-LLMs/Anthropic",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Anthropic",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Anthropic_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Anthropic_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:14:40.681143",
+              "executive_summary": "**Anthropic** has firmly established itself as the **\"Thinking Man's AI\"** company. While OpenAI pursues AGI through massive multimodal breadth (audio/video/speech), Anthropic has doubled down on **intelligence density**, **coding capability**, and **controllable agency**.\n\n**Core Value Proposition:...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:14:40.681143"
+        },
+        {
+          "name": "Baidu",
+          "folder_path": "General-Purpose-LLMs/Baidu",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Baidu",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Baidu_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Baidu_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:16:44.548582",
+              "executive_summary": "**Baidu (ERNIE / Wenxin Yiyan)** is the **\"Google of China\"** and the primary gatekeeper for Chinese AI services. ERNIE 4.0 is widely considered the closest domestic rival to GPT-4 for simplified and traditional Chinese tasks, deeply integrated into Baidu's massive search and cloud ecosystem.\n\n**Cor...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:16:44.548582"
+        },
+        {
+          "name": "Cohere",
+          "folder_path": "General-Purpose-LLMs/Cohere",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Cohere",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Cohere_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Cohere_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:19:03.939513",
+              "executive_summary": "**Cohere** is the **\"Enterprise RAG\"** company. Unlike OpenAI or Anthropic, which chase AGI and consumer chatbots, Cohere is singularly focused on making AI useful for businesses. They don't have a consumer \"ChatGPT\" product; they build backend infrastructure for search, retrieval, and action.\n\n**Co...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:19:03.939513"
+        },
+        {
+          "name": "DeepSeek",
+          "folder_path": "General-Purpose-LLMs/DeepSeek",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\DeepSeek",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_DeepSeek_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_DeepSeek_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:20:49.554806",
+              "executive_summary": "**DeepSeek (High-Flyer Quantum)** is the \"wildcard\" of the global AI race. As a Chinese open-source lab, they have repeatedly shocked the industry by releasing models (DeepSeek V3, DeepSeek Coder) that rival GPT-4 and Claude 3.5 Sonnet for **1/10th to 1/100th of the price**.\n\n**Core Value Propositio...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:20:49.554806"
+        },
+        {
+          "name": "Google",
+          "folder_path": "General-Purpose-LLMs/Google",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Google",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Google_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Google_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:24:33.891701",
+              "executive_summary": "**Google (Google DeepMind)** is the \"Sleeping Giant\" that has fully awakened. After a rocky start with Bard, the **Gemini** ecosystem has stabilized into the most robust, high-context, and multimodal platform available. Google is no longer playing catch-up; they are differentiating on **context leng...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:24:33.891701"
+        },
+        {
+          "name": "Huawei",
+          "folder_path": "General-Purpose-LLMs/Huawei",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Huawei",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Huawei_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Huawei_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:26:16.070019",
+              "executive_summary": "**Huawei (Pangu / Ascend)** is the \"Apple + NVIDIA of China.\" They don't just build models; they build the entire stack from the **chip** (Ascend 910B) to the **framework** (MindSpore) to the **model** (Pangu 5.0). Their goal is **total independence** from US technology.\n\n**Core Value Proposition:**...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:26:16.070019"
+        },
+        {
+          "name": "IBM",
+          "folder_path": "General-Purpose-LLMs/IBM",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\IBM",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_IBM_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_IBM_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:27:34.129406",
+              "executive_summary": "**IBM (watsonx / Granite)** is the \"Adult in the Room\" for AI. While OpenAI and Anthropic fight for consumer mindshare, IBM focuses entirely on **governance, liability, and enterprise safety**. They are not trying to build AGI; they are trying to build models that won't get you sued.\n\n**Core Value P...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:27:34.129406"
+        },
+        {
+          "name": "Meta",
+          "folder_path": "General-Purpose-LLMs/Meta",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Meta",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Meta_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Meta_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:28:39.416010",
+              "executive_summary": "**Meta (Llama)** is the \"Linux of AI.\" By releasing **open weights** for state-of-the-art models (Llama 3.1 405B), Meta has commoditized the \"intelligence layer\" of the AI stack, forcing competitors (OpenAI, Google) to compete on infrastructure and products rather than just raw model capability.\n\n**...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:28:39.416010"
+        },
+        {
+          "name": "Microsoft",
+          "folder_path": "General-Purpose-LLMs/Microsoft",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Microsoft",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Microsoft_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Microsoft_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:31:07.844082",
+              "executive_summary": "**Microsoft** is playing a double game. On one hand, they own the high-end via their partnership with **OpenAI** (Azure OpenAI Service). On the other hand, they are aggressively dominating the **\"Small Language Model\" (SLM)** market with their **Phi** series. They want you to use GPT-4o for complex ...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:31:07.844082"
+        },
+        {
+          "name": "Mistral-AI",
+          "folder_path": "General-Purpose-LLMs/Mistral-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Mistral-AI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Mistral-AI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Mistral-AI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:41:21.625187",
+              "executive_summary": "**Mistral AI** is the **\"European Champion\"** of the open-weight movement. Born from ex-DeepMind and Meta researchers in Paris, Mistral has consistently delivered highly efficient, uncensored models that serve as a direct alternative to the dominant US players.\n\n**Core Value Proposition:**\n- **For B...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:41:21.625187"
+        },
+        {
+          "name": "OpenAI",
+          "folder_path": "General-Purpose-LLMs/OpenAI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\OpenAI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_OpenAI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_OpenAI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:44:00.407735",
+              "executive_summary": "**OpenAI** is the **\"Apple of AI.\"** They created the market with ChatGPT and continue to define it through superior product design, relentless innovation, and a brand that is synonymous with \"AI\" itself. They are not an \"open\" company; they are a product company that sells access to the most advanc...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:44:00.407735"
+        },
+        {
+          "name": "Tencent",
+          "folder_path": "General-Purpose-LLMs/Tencent",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Tencent",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Tencent_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Tencent_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:47:02.493002",
+              "executive_summary": "**Tencent (Hunyuan)** is the **\"Social Graph AI.\"** Unlike Alibaba (open weights) or Baidu (search), Tencent's strategy is to leverage its unparalleled asset: the **WeChat/Weixin ecosystem**. Their Hunyuan model is not primarily for open developers; it's the engine for a new generation of \"Super App...",
+              "strategic_assessment": "",
+              "confidence": "Medium (due to lack of Western access)"
+            }
+          ],
+          "last_updated": "2025-12-27T15:47:02.493002"
+        },
+        {
+          "name": "Yandex",
+          "folder_path": "General-Purpose-LLMs/Yandex",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\Yandex",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Yandex_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Yandex_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:50:20.182627",
+              "executive_summary": "**Yandex** is the **\"Google of Russia.\"** Their AI strategy is a mirror of Google's, centered on integrating their proprietary large language model, **YandexGPT**, directly into their dominant search engine and cloud ecosystem. They are not competing for global developer mindshare; they are defendin...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:50:20.182627"
+        },
+        {
+          "name": "xAI",
+          "folder_path": "General-Purpose-LLMs/xAI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\General-Purpose-LLMs\\xAI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_xAI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_xAI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T15:49:09.354709",
+              "executive_summary": "**xAI** is Elon Musk's answer to OpenAI. Its mission is to \"understand the true nature of the universe,\" but its practical strategy is to leverage its unique asset: **real-time access to the X (Twitter) firehose**. Grok is not just a language model; it's a real-time \"zeitgeist engine.\"\n\n**Core Value...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T15:49:09.354709"
+        }
+      ]
+    },
+    {
+      "name": "Image-Generation",
+      "display_name": "Image Generation",
+      "provider_count": 11,
+      "completed_count": 11,
+      "providers": [
+        {
+          "name": "Adobe",
+          "folder_path": "Image-Generation/Adobe",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Adobe",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Adobe_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Adobe_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:24:44.002072",
+              "executive_summary": "**Adobe (Firefly)** is positioning itself as the **\"Responsible AI for Creatives.\"** Unlike Midjourney or Stable Diffusion, which have faced backlash over training data, Adobe has built Firefly from the ground up on a foundation of ethically sourced images (Adobe Stock, public domain). Their core va...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:24:44.002072"
+        },
+        {
+          "name": "Artbreeder",
+          "folder_path": "Image-Generation/Artbreeder",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Artbreeder",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Artbreeder_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Artbreeder_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:26:20.373190",
+              "executive_summary": "**Artbreeder** is a unique platform that pioneered the concept of **\"breeding\" and \"evolving\" images** using AI. Unlike typical text-to-image generators where you type a prompt and get an output, Artbreeder focuses on **iterative, visual exploration** within a shared latent space. It's less about \"g...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:26:20.373190"
+        },
+        {
+          "name": "DreamStudio",
+          "folder_path": "Image-Generation/DreamStudio",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\DreamStudio",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_DreamStudio_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_DreamStudio_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:28:28.063270",
+              "executive_summary": "**DreamStudio** is the **official, user-friendly gateway to Stability AI's powerful open-source models**. It removes the technical friction of running Stable Diffusion locally, offering a streamlined web interface for text-to-image generation, in-painting, and out-painting. It positions itself as th...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:28:28.063270"
+        },
+        {
+          "name": "Ideogram",
+          "folder_path": "Image-Generation/Ideogram",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Ideogram",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Ideogram_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Ideogram_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:30:01.890221",
+              "executive_summary": "**Ideogram** is the **\"Designer's Image AI\"**. It carves out a niche by solving the most persistent problem in generative image AI: **reliably rendering text within images**. While Midjourney and Stable Diffusion struggle with garbled letters, Ideogram delivers legible typography, making it invaluab...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:30:01.890221"
+        },
+        {
+          "name": "Leonardo-AI",
+          "folder_path": "Image-Generation/Leonardo-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Leonardo-AI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Leonardo-AI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Leonardo-AI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:32:03.395407",
+              "executive_summary": "**Leonardo AI** is the **\"Power User's Stable Diffusion.\"** While DreamStudio is the official frontend and Playground AI is simpler, Leonardo AI is built for those who want deep control, custom models, and a robust set of editing tools around the Stable Diffusion ecosystem. It's particularly popular...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:32:03.395407"
+        },
+        {
+          "name": "Midjourney",
+          "folder_path": "Image-Generation/Midjourney",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Midjourney",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Midjourney_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Midjourney_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:34:11.366070",
+              "executive_summary": "**Midjourney** is the **\"Artistic AI\"**. It consistently produces images with unparalleled aesthetic quality, a unique artistic style, and a photorealistic fidelity that often surpasses its competitors. Unlike other models, Midjourney prioritizes artistic vision and \"coolness\" over strict prompt adh...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:34:11.366070"
+        },
+        {
+          "name": "NightCafe",
+          "folder_path": "Image-Generation/NightCafe",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\NightCafe",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_NightCafe_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_NightCafe_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:36:03.985558",
+              "executive_summary": "**NightCafe Creator** is the **\"AI Art Playground.\"** It positions itself as a comprehensive web and mobile platform that aggregates access to a wide variety of state-of-the-art generative AI models (including Stable Diffusion, DALL-E 3, Ideogram, and many custom models). Its core strength lies in i...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:36:03.985558"
+        },
+        {
+          "name": "Playground-AI",
+          "folder_path": "Image-Generation/Playground-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Playground-AI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Playground-AI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Playground-AI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:38:32.446922",
+              "executive_summary": "**Playground AI** is the **\"Free & Easy AI Art Studio.\"** It positions itself as the most accessible platform for AI image generation, offering an exceptionally generous free tier and a user-friendly interface. While other platforms might excel in raw artistic quality (Midjourney) or deep customizat...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:38:32.446922"
+        },
+        {
+          "name": "RunDiffusion",
+          "folder_path": "Image-Generation/RunDiffusion",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\RunDiffusion",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_RunDiffusion_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_RunDiffusion_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:41:47.049658",
+              "executive_summary": "**RunDiffusion** is a **\"Cloud GPU for Stable Diffusion Power Users.\"** It offers a simple, web-based platform to run popular Stable Diffusion GUIs (Automatic1111, ComfyUI) on high-end NVIDIA GPUs in the cloud. It solves the problem of needing expensive local hardware and complex local setups, makin...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:41:47.049658"
+        },
+        {
+          "name": "Scenario",
+          "folder_path": "Image-Generation/Scenario",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Scenario",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Scenario_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Scenario_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:44:55.626743",
+              "executive_summary": "**Scenario AI** is the **\"Game Developer's AI Art Studio.\"** While general-purpose image generators can create stunning visuals, Scenario AI is built from the ground up to address the specific needs of game development: **style consistency, IP protection, and seamless integration into game engines**...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:44:55.626743"
+        },
+        {
+          "name": "Stability-AI",
+          "folder_path": "Image-Generation/Stability-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Image-Generation\\Stability-AI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Stability-AI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Stability-AI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T17:47:45.773556",
+              "executive_summary": "**Stability AI** is the **\"Open-Source Standard\"** for generative image models. By releasing powerful models like Stable Diffusion with permissive licenses, they have democratized AI image generation, fostering a massive ecosystem of community-driven innovation. They are the antithesis of OpenAI's c...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T17:47:45.773556"
+        }
+      ]
+    },
+    {
+      "name": "Model-Hosting-and-Inference",
+      "display_name": "Model Hosting / Inference Platforms",
+      "provider_count": 7,
+      "completed_count": 7,
+      "providers": [
+        {
+          "name": "Baseten",
+          "folder_path": "Model-Hosting-and-Inference/Baseten",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Baseten",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Baseten_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Baseten_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:13:05.025017",
+              "executive_summary": "**Baseten** is a **\"Production AI Infrastructure\"** platform. It bridges the gap between a trained model and a scalable, production-ready API endpoint. Unlike platforms that just offer pre-trained models (like Replicate), Baseten is designed for ML engineers who need to deploy their *own* custom mod...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:13:05.025017"
+        },
+        {
+          "name": "Cerebras",
+          "folder_path": "Model-Hosting-and-Inference/Cerebras",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Cerebras",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Cerebras_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Cerebras_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:13:57.113654",
+              "executive_summary": "**Cerebras Systems** is not a model provider; it is an **AI hardware company** that builds specialized AI supercomputers. Their core innovation is the **Wafer-Scale Engine (WSE)**, a massive chip the size of an entire silicon wafer, designed to train and run AI models faster and more efficiently tha...",
+              "strategic_assessment": "",
+              "confidence": "Low (for solo builder relevance)"
+            }
+          ],
+          "last_updated": "2025-12-27T18:13:57.113654"
+        },
+        {
+          "name": "CoreWeave",
+          "folder_path": "Model-Hosting-and-Inference/CoreWeave",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\CoreWeave",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_CoreWeave_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_CoreWeave_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:15:29.671761",
+              "executive_summary": "**CoreWeave** is a **specialized GPU cloud provider** for massive-scale AI workloads. Unlike general-purpose clouds like AWS or GCP, CoreWeave's entire infrastructure is built from the ground up for one purpose: to run large-scale AI training and inference on NVIDIA GPUs as efficiently and cheaply a...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:15:29.671761"
+        },
+        {
+          "name": "Groq",
+          "folder_path": "Model-Hosting-and-Inference/Groq",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Groq",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Groq_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Groq_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:16:48.710672",
+              "executive_summary": "**Groq** is an **AI inference company** that has created a new type of chip, the **Language Processing Unit (LPU)**, designed to run Large Language Models (LLMs) at unprecedented speeds. They are not a model training company; they are a \"speed\" company. Their goal is to eliminate latency and make AI...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:16:48.710672"
+        },
+        {
+          "name": "Modal",
+          "folder_path": "Model-Hosting-and-Inference/Modal",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Modal",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Modal_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Modal_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:22:31.846046",
+              "executive_summary": "**Modal** is the **\"Infrastructure-from-Code\"** platform for AI. It offers a serverless execution environment that abstracts away the complexities of cloud infrastructure, allowing developers to run arbitrary Python code (including GPU-accelerated tasks) with automatic scaling and sub-second cold st...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:22:31.846046"
+        },
+        {
+          "name": "Replicate",
+          "folder_path": "Model-Hosting-and-Inference/Replicate",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Replicate",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Replicate_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Replicate_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:24:38.295740",
+              "executive_summary": "**Replicate** is the **\"Hugging Face Spaces of APIs.\"** It provides a simple, API-driven platform for running and deploying a vast catalog of open-source machine learning models. Its core value proposition is to make cutting-edge AI models accessible to developers without the complexities of infrast...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:24:38.295740"
+        },
+        {
+          "name": "Together-AI",
+          "folder_path": "Model-Hosting-and-Inference/Together-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Model-Hosting-and-Inference\\Together-AI",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_Together-AI_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_Together-AI_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:26:18.926280",
+              "executive_summary": "**Together AI** is the **\"Open-Source AI Supercloud.\"** They offer a comprehensive platform for developers to build, run, and fine-tune open-source AI models at scale, leveraging their massive GPU infrastructure and optimized software stack. They position themselves as the high-performance, cost-eff...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:26:18.926280"
+        }
+      ]
+    },
+    {
+      "name": "Music-Generation",
+      "display_name": "Music Generation",
+      "provider_count": 7,
+      "completed_count": 7,
+      "providers": [
+        {
+          "name": "AIVA",
+          "folder_path": "Music-Generation/AIVA",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\AIVA",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 2,
+              "has_content": true
+            }
+          },
+          "research_files": [
+            {
+              "filename": "2026_AIVA_Deep_Research_Analysis.md",
+              "path": "09_Exports/2026_AIVA_Deep_Research_Analysis.md",
+              "last_modified": "2025-12-27T18:42:15.248265",
+              "executive_summary": "**AIVA (Artificial Intelligence Virtual Artist)** is an AI music composition engine specializing in **emotional, cinematic, and classical music**. Unlike many generative music tools that focus on pop or electronic genres, AIVA aims to produce high-quality, orchestral-style soundtracks suitable for f...",
+              "strategic_assessment": "",
+              "confidence": "High"
+            }
+          ],
+          "last_updated": "2025-12-27T18:42:15.248265"
+        },
+        {
+          "name": "Amper",
+          "folder_path": "Music-Generation/Amper",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Amper",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Beatoven",
+          "folder_path": "Music-Generation/Beatoven",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Beatoven",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Boomy",
+          "folder_path": "Music-Generation/Boomy",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Boomy",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Soundraw",
+          "folder_path": "Music-Generation/Soundraw",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Soundraw",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Suno",
+          "folder_path": "Music-Generation/Suno",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Suno",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Udio",
+          "folder_path": "Music-Generation/Udio",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Music-Generation\\Udio",
+          "status": "completed",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 1,
+              "has_content": true
+            },
+            "09_Exports": {
+              "file_count": 1,
+              "has_content": true
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        }
+      ]
+    },
+    {
+      "name": "Video-Generation",
+      "display_name": "Video Generation",
+      "provider_count": 8,
+      "completed_count": 0,
+      "providers": [
+        {
+          "name": "Colossyan",
+          "folder_path": "Video-Generation/Colossyan",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Colossyan",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "HeyGen",
+          "folder_path": "Video-Generation/HeyGen",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\HeyGen",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Kaiber",
+          "folder_path": "Video-Generation/Kaiber",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Kaiber",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Luma-AI",
+          "folder_path": "Video-Generation/Luma-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Luma-AI",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Pika",
+          "folder_path": "Video-Generation/Pika",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Pika",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "PixVerse",
+          "folder_path": "Video-Generation/PixVerse",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\PixVerse",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Runway",
+          "folder_path": "Video-Generation/Runway",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Runway",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Synthesia",
+          "folder_path": "Video-Generation/Synthesia",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Video-Generation\\Synthesia",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        }
+      ]
+    },
+    {
+      "name": "Voice-and-Speech",
+      "display_name": "Voice / Speech (TTS & Cloning)",
+      "provider_count": 7,
+      "completed_count": 0,
+      "providers": [
+        {
+          "name": "ElevenLabs",
+          "folder_path": "Voice-and-Speech/ElevenLabs",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\ElevenLabs",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "LOVO",
+          "folder_path": "Voice-and-Speech/LOVO",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\LOVO",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Murf-AI",
+          "folder_path": "Voice-and-Speech/Murf-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\Murf-AI",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Play-ht",
+          "folder_path": "Voice-and-Speech/Play-ht",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\Play-ht",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Resemble-AI",
+          "folder_path": "Voice-and-Speech/Resemble-AI",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\Resemble-AI",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "Speechify",
+          "folder_path": "Voice-and-Speech/Speechify",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\Speechify",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        },
+        {
+          "name": "WellSaid-Labs",
+          "folder_path": "Voice-and-Speech/WellSaid-Labs",
+          "absolute_path": "C:\\Users\\JaZeR\\OneDrive\\Desktop\\2026 → JaZeR Mainframe\\2026 → AI Models Master Reference Guide\\AI-Research\\Voice-and-Speech\\WellSaid-Labs",
+          "status": "not_started",
+          "folder_contents": {
+            "00_Inbox": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "01_Official_Docs": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "02_Reference_and_Writeups": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "03_Papers_and_Benchmarks": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "04_Pricing_and_Policies": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "05_Code_and_Examples": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "06_Evals_and_Testing": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "07_Assets_and_Media": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "08_Notes": {
+              "file_count": 0,
+              "has_content": false
+            },
+            "09_Exports": {
+              "file_count": 0,
+              "has_content": false
+            }
+          },
+          "research_files": [],
+          "last_updated": null
+        }
+      ]
+    }
+  ]
+}

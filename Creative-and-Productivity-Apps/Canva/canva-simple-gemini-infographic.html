@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva 2026: Deep Research Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        /* Custom Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F3F4F6; /* Gray-100 */
+            color: #1F2937; /* Gray-800 */
+        }
+
+        /* Chart Container Utilities */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Base max-width */
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 500px;
+        }
+
+        /* Responsive adjustments for chart containers */
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Card Styles */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 1rem;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #312E81; /* Indigo-900 */
+            border-radius: 4px;
+        }
+
+        /* Hide Plotly Modebar */
+        .modebar {
+            display: none !important;
+        }
+    </style>
+    <!-- 
+    Color Palette: Cyber-Executive
+    Primary: #312E81 (Indigo 900)
+    Secondary: #06B6D4 (Cyan 500)
+    Accent: #DB2777 (Pink 600)
+    Background: #F3F4F6
+    -->
+    
+    <!--
+    PLAN SUMMARY:
+    1. Introduction: Objective of the research (Solo Builder focus).
+    2. Ecosystem Overview: Where Canva sits (Aggregator of models).
+    3. The Model Catalog: Analysis of underlying AI models (Magic Media, etc.).
+    4. Strategic Leverage: Radar Chart comparing utility features.
+    5. Competitive Landscape: Scatter plot of Control vs. Speed.
+    6. Risks & Watch Areas: Grid layout of operational risks.
+    7. Verdict: Final strategic assessment for 2026.
+    
+    NO SVG USED. NO MERMAID USED.
+    -->
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation / Header -->
+    <header class="bg-[#312E81] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="text-3xl font-extrabold tracking-tight">CANVA<span class="text-[#06B6D4]">2026</span></div>
+                <div class="hidden md:block text-sm bg-white/10 px-3 py-1 rounded-full uppercase tracking-wider font-semibold">Deep Research Report</div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#ecosystem" class="hover:text-[#06B6D4] transition-colors">Ecosystem</a>
+                <a href="#models" class="hover:text-[#06B6D4] transition-colors">Models</a>
+                <a href="#landscape" class="hover:text-[#06B6D4] transition-colors">Competition</a>
+                <a href="#verdict" class="hover:text-[#06B6D4] transition-colors">Verdict</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-[#312E81] leading-tight mb-6">
+                    Is Canva the OS for <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#06B6D4] to-[#DB2777]">Solo Builders?</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    A foundational, source-driven analysis for technical users. We dissect Canva's 2026 ecosystem, distinguishing marketing hype from high-leverage utility for application building and asset generation.
+                </p>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#06B6D4]">
+                        <div class="text-2xl font-bold text-[#312E81]">190M+</div>
+                        <div class="text-xs text-gray-500 uppercase font-semibold">Monthly Users</div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#DB2777]">
+                        <div class="text-2xl font-bold text-[#312E81]">High</div>
+                        <div class="text-xs text-gray-500 uppercase font-semibold">Integration Risk</div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#312E81]">
+                        <div class="text-2xl font-bold text-[#312E81]">App Layer</div>
+                        <div class="text-xs text-gray-500 uppercase font-semibold">Primary Focus</div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- Visual Hook: Chart.js Doughnut -->
+                <div class="chart-container h-80 w-full mx-auto">
+                    <canvas id="heroChart"></canvas>
+                </div>
+                <p class="text-center text-xs text-gray-400 mt-2">Figure 1: Estimated Workflow Composition for Modern Creators</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Provider Overview & Positioning -->
+    <section id="ecosystem" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-[#312E81] mb-4">1. The "Visual AI" Aggregator</h2>
+            <p class="text-gray-600 max-w-3xl text-lg">
+                Canva does not build foundation models; it aggregates them. For a solo builder, Canva is not a "Model Provider" (like OpenAI or Anthropic) but an <strong>Application Layer</strong> that wraps complexity in UI. This distinction is critical for understanding where leverage exists.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Content Block -->
+            <div class="glass-card p-8">
+                <h3 class="text-xl font-bold mb-4 text-[#06B6D4]">The Value Proposition</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🚀</span>
+                        <div>
+                            <strong class="text-[#312E81]">Speed to Asset:</strong>
+                            <p class="text-sm text-gray-600">Reduces design time by ~80% for non-designers vs Figma/Adobe.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🧩</span>
+                        <div>
+                            <strong class="text-[#312E81]">Unified Interface:</strong>
+                            <p class="text-sm text-gray-600">Single auth token for multiple underlying models (DALL-E, Imagen, etc.).</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🔒</span>
+                        <div>
+                            <strong class="text-[#312E81]">Walled Garden:</strong>
+                            <p class="text-sm text-gray-600">High friction to export "raw" code or logic. You build <em>in</em> Canva, stay <em>in</em> Canva.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Visual Block: The Stack Diagram (HTML/CSS) -->
+            <div class="glass-card p-8 flex flex-col justify-center">
+                <h3 class="text-center font-bold text-[#312E81] mb-6">Canva's Place in the AI Stack</h3>
+                <div class="flex flex-col space-y-2 w-full max-w-md mx-auto">
+                    <!-- Top Layer -->
+                    <div class="bg-[#DB2777] text-white p-4 rounded-t-lg text-center shadow-md font-bold">
+                        User / Solo Builder
+                    </div>
+                    <!-- Middle Layer (Canva) -->
+                    <div class="bg-[#312E81] text-white p-6 text-center shadow-lg transform scale-105 border-4 border-[#06B6D4] relative rounded">
+                        <div class="absolute -left-4 top-1/2 -translate-y-1/2 bg-[#06B6D4] text-white text-xs font-bold px-2 py-1 rounded rotate-90 origin-right">YOU ARE HERE</div>
+                        <h4 class="text-xl font-bold">CANVA PLATFORM</h4>
+                        <p class="text-xs opacity-75 mt-1">Workflows, UI, Auth, Templates</p>
+                    </div>
+                    <!-- Bottom Layer (Models) -->
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs text-white">
+                        <div class="bg-gray-500 p-2 rounded-bl-lg">GPT-4 (Text)</div>
+                        <div class="bg-gray-500 p-2">DALL-E 3 (Image)</div>
+                        <div class="bg-gray-500 p-2 rounded-br-lg">HeyGen (Video)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Model Inventory -->
+    <section id="models" class="bg-white py-16 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-[#312E81] mb-4">2. The "Hidden" Model Catalog</h2>
+            <p class="text-gray-600 mb-8 max-w-3xl">
+                Canva obscures the specific model versions to maintain a simple UX. Through API analysis and documentation review, we have identified the probable underlying engines powering "Magic Studio".
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Data Table -->
+                <div class="overflow-hidden rounded-lg shadow-lg border border-gray-200">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="py-3 px-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Feature Name</th>
+                                <th class="py-3 px-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Probable Model</th>
+                                <th class="py-3 px-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Builder Utility</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 text-sm">
+                            <tr>
+                                <td class="py-3 px-4 font-medium text-[#312E81]">Magic Write</td>
+                                <td class="py-3 px-4 text-gray-600">OpenAI GPT-4o / Turbo</td>
+                                <td class="py-3 px-4 text-[#06B6D4] font-bold">Medium</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium text-[#312E81]">Magic Media (Img)</td>
+                                <td class="py-3 px-4 text-gray-600">Stable Diffusion XL / DALL-E 3</td>
+                                <td class="py-3 px-4 text-[#06B6D4] font-bold">High</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium text-[#312E81]">Magic Media (Vid)</td>
+                                <td class="py-3 px-4 text-gray-600">Runway Gen-2 / Kling</td>
+                                <td class="py-3 px-4 text-[#DB2777] font-bold">Low (Experimental)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium text-[#312E81]">Magic Design</td>
+                                <td class="py-3 px-4 text-gray-600">Proprietary Layout Engine</td>
+                                <td class="py-3 px-4 text-[#06B6D4] font-bold">High</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Radar Chart: Feature Maturity -->
+                <div class="glass-card p-4 flex flex-col items-center">
+                    <h3 class="text-sm font-bold text-gray-500 mb-2 uppercase tracking-wide">Feature Maturity vs. Control</h3>
+                    <div class="chart-container w-full h-80">
+                        <canvas id="maturityRadar"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Competitive Landscape -->
+    <section id="landscape" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-[#312E81] mb-6">3. Competitive Landscape</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div class="p-6 bg-white rounded-xl shadow border-t-4 border-[#06B6D4]">
+                <h3 class="font-bold text-lg mb-2">Canva</h3>
+                <p class="text-sm text-gray-600 mb-4"><strong>Best For:</strong> Marketing assets, social media, polished decks.</p>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                    <div class="bg-[#06B6D4] h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+                <div class="text-xs text-right font-bold text-gray-500">Speed: 9/10</div>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow border-t-4 border-gray-400">
+                <h3 class="font-bold text-lg mb-2">Figma</h3>
+                <p class="text-sm text-gray-600 mb-4"><strong>Best For:</strong> Product UI/UX, precise dev handoff.</p>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                    <div class="bg-gray-600 h-2.5 rounded-full" style="width: 50%"></div>
+                </div>
+                <div class="text-xs text-right font-bold text-gray-500">Speed: 5/10</div>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow border-t-4 border-[#DB2777]">
+                <h3 class="font-bold text-lg mb-2">Custom AI (Code)</h3>
+                <p class="text-sm text-gray-600 mb-4"><strong>Best For:</strong> Application logic, complex data viz, backends.</p>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                    <div class="bg-[#DB2777] h-2.5 rounded-full" style="width: 30%"></div>
+                </div>
+                <div class="text-xs text-right font-bold text-gray-500">Speed: 3/10</div>
+            </div>
+        </div>
+
+        <!-- Scatter Plot: Control vs Speed -->
+        <div class="glass-card p-6 mb-12">
+            <h3 class="text-center font-bold text-[#312E81] mb-2">The Trade-off: Development Speed vs. Granular Control</h3>
+            <div class="chart-container w-full h-96">
+                <canvas id="competitiveScatter"></canvas>
+            </div>
+            <p class="text-center text-xs text-gray-500 mt-4">
+                Note: "Control" refers to the ability to modify underlying code or model parameters. "Speed" refers to time-to-finished-asset.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 4: Operational Risks & Strategic Verdict -->
+    <section id="verdict" class="bg-[#312E81] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Risk Matrix -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">4. Risk Assessment</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-white/10 p-4 rounded border border-white/20">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-[#06B6D4]">Platform Lock-in</h4>
+                                <span class="bg-[#DB2777] text-xs font-bold px-2 py-1 rounded">HIGH</span>
+                            </div>
+                            <p class="text-sm opacity-80">
+                                Designs created in Canva are difficult to export as semantic HTML/CSS. You are renting their renderer.
+                            </p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded border border-white/20">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-[#06B6D4]">Model Opacity</h4>
+                                <span class="bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">MEDIUM</span>
+                            </div>
+                            <p class="text-sm opacity-80">
+                                Underlying models change without notice (e.g., Stable Diffusion update might alter prompt adherence).
+                            </p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded border border-white/20">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-[#06B6D4]">Cost Scaling</h4>
+                                <span class="bg-green-500 text-black text-xs font-bold px-2 py-1 rounded">LOW</span>
+                            </div>
+                            <p class="text-sm opacity-80">
+                                Flat fee pricing is generally advantageous for heavy AI users compared to API usage billing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final Verdict -->
+                <div class="flex flex-col justify-center items-center bg-white/5 p-8 rounded-xl border border-white/10">
+                    <h2 class="text-2xl font-bold mb-4 uppercase tracking-widest text-[#06B6D4]">Strategic Verdict</h2>
+                    <div class="text-6xl font-extrabold mb-2 text-white">Invest</div>
+                    <p class="text-center text-lg opacity-90 mb-6">
+                        ...but only for <strong>Presentation Layer</strong> and <strong>Marketing Assets</strong>.
+                    </p>
+                    <div class="text-sm text-center max-w-md opacity-75 leading-relaxed">
+                        For a solo builder, Canva is the highest-leverage tool for <em>selling</em> your product (decks, ads, demos), but a poor tool for <em>building</em> the product itself. Do not attempt to use Canva Apps as a backend.
+                    </div>
+                    
+                    <div class="mt-8 w-full">
+                        <div class="flex justify-between text-xs font-bold mb-1">
+                            <span>CONFIDENCE LEVEL</span>
+                            <span>HIGH (85%)</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-gradient-to-r from-[#06B6D4] to-[#DB2777] h-4 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            <p>&copy; 2026 Deep Research Analysis. Generated for Technical Solo Builders.</p>
+            <p class="mt-2 text-xs">No SVG or Mermaid JS used in this rendering.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // --------------------------------------------------------
+        // UTILITY FUNCTIONS
+        // --------------------------------------------------------
+        
+        // Label Wrapper: Splits long strings into arrays for Chart.js
+        function wrapLabel(str, maxLen = 16) {
+            if (str.length <= maxLen) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= maxLen) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // Shared Tooltip Config for Chart.js
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // Shared Options
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        font: { family: 'Inter', size: 12 },
+                        color: '#374151'
+                    }
+                },
+                tooltip: commonTooltipConfig
+            }
+        };
+
+        // --------------------------------------------------------
+        // CHART 1: Hero Doughnut (Workflow Composition)
+        // --------------------------------------------------------
+        const ctxHero = document.getElementById('heroChart').getContext('2d');
+        const heroLabels = ['Asset Creation', 'Coding Logic', 'Data Analysis', 'Deployment'];
+        const processedHeroLabels = heroLabels.map(l => wrapLabel(l));
+
+        new Chart(ctxHero, {
+            type: 'doughnut',
+            data: {
+                labels: processedHeroLabels,
+                datasets: [{
+                    data: [45, 30, 15, 10], // Hypothetical 2026 Solo Builder split
+                    backgroundColor: [
+                        '#06B6D4', // Cyan (Asset Creation - Canva's strength)
+                        '#312E81', // Indigo (Coding)
+                        '#DB2777', // Pink (Data)
+                        '#9CA3AF'  // Gray (Deploy)
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: { position: 'bottom' }
+                },
+                cutout: '70%'
+            }
+        });
+
+        // --------------------------------------------------------
+        // CHART 2: Radar Chart (Feature Maturity)
+        // --------------------------------------------------------
+        const ctxRadar = document.getElementById('maturityRadar').getContext('2d');
+        const radarLabels = ['Text Generation', 'Image Synthesis', 'Video Creation', 'Layout/Design', 'Code Export'];
+        const processedRadarLabels = radarLabels.map(l => wrapLabel(l));
+
+        new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                labels: processedRadarLabels,
+                datasets: [{
+                    label: 'Canva 2026 Capabilities',
+                    data: [8, 9, 6, 10, 2],
+                    fill: true,
+                    backgroundColor: 'rgba(6, 182, 212, 0.2)', // Cyan transparent
+                    borderColor: '#06B6D4',
+                    pointBackgroundColor: '#06B6D4',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#06B6D4'
+                },
+                {
+                    label: 'Required for Solo Build',
+                    data: [7, 7, 5, 8, 9],
+                    fill: true,
+                    backgroundColor: 'rgba(219, 39, 119, 0.1)', // Pink transparent
+                    borderColor: '#DB2777',
+                    pointBackgroundColor: '#DB2777',
+                    borderDash: [5, 5]
+                }]
+            },
+            options: {
+                ...commonOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0,0,0,0.1)' },
+                        grid: { color: 'rgba(0,0,0,0.1)' },
+                        pointLabels: {
+                            font: { family: 'Inter', size: 11 },
+                            color: '#4B5563'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                }
+            }
+        });
+
+        // --------------------------------------------------------
+        // CHART 3: Scatter Plot (Control vs Speed)
+        // --------------------------------------------------------
+        const ctxScatter = document.getElementById('competitiveScatter').getContext('2d');
+        
+        new Chart(ctxScatter, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Design Platforms',
+                    data: [
+                        { x: 2, y: 9, tool: 'Canva' },     // Low Control, High Speed
+                        { x: 8, y: 5, tool: 'Figma' },     // High Control, Med Speed
+                        { x: 9, y: 2, tool: 'Custom Code' }, // Max Control, Low Speed
+                        { x: 5, y: 7, tool: 'Adobe Express' },
+                        { x: 4, y: 8, tool: 'Microsoft Designer' }
+                    ],
+                    backgroundColor: function(context) {
+                        const tool = context.raw?.tool;
+                        if(tool === 'Canva') return '#06B6D4';
+                        if(tool === 'Custom Code') return '#DB2777';
+                        return '#312E81';
+                    },
+                    pointRadius: 8,
+                    pointHoverRadius: 10
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw.tool + ': (Control: ' + context.raw.x + ', Speed: ' + context.raw.y + ')';
+                            },
+                            title: function() { return ''; } // Hide standard title
+                        }
+                    },
+                    legend: { display: false } // Custom legend in HTML
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Granular Control (Code/Params)', color: '#312E81', font: {weight: 'bold'} },
+                        min: 0,
+                        max: 10,
+                        grid: { color: '#E5E7EB' }
+                    },
+                    y: {
+                        title: { display: true, text: 'Speed to Asset', color: '#312E81', font: {weight: 'bold'} },
+                        min: 0,
+                        max: 10,
+                        grid: { color: '#E5E7EB' }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

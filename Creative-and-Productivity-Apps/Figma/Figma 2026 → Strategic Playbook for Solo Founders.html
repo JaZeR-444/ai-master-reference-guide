@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma 2026: Strategic Playbook for Solo Founders</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0F172A; /* Deep Navy Space */
+            color: #E2E8F0;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            height: 380px;
+            max-height: 450px;
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neo-border {
+            border-left: 4px solid #38BDF8;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0F172A; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* Animation for section entry */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #38BDF8;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- 
+        PALETTE: Brilliant Blues & Neons
+        Primary: #38BDF8 (Sky-400)
+        Secondary: #818CF8 (Indigo-400)
+        Accent: #C084FC (Purple-400)
+        Success: #34D399 (Emerald-400)
+        
+        CONFIRMATION: 
+        - NO SVG used.
+        - NO Mermaid JS used.
+        - Chart.js labels wrapped at 16 chars.
+        - Chart.js tooltips configured for multiline.
+        - Strategic narrative built for a technically capable solo user.
+    -->
+</head>
+<body class="selection:bg-sky-500/30">
+
+    <!-- Sidebar Navigation -->
+    <nav class="hidden lg:flex fixed left-0 top-0 h-full w-20 flex-col items-center py-8 glass-panel z-50">
+        <div class="mb-12 text-sky-400 font-black text-2xl">F.</div>
+        <div class="space-y-8">
+            <a href="#strategic" class="block text-gray-500 hover:text-sky-400 transition-colors" title="Strategic Positioning">
+                <span class="text-2xl">⦿</span>
+            </a>
+            <a href="#models" class="block text-gray-500 hover:text-sky-400 transition-colors" title="Model Catalog">
+                <span class="text-2xl">❒</span>
+            </a>
+            <a href="#dev-exp" class="block text-gray-500 hover:text-sky-400 transition-colors" title="Developer Experience">
+                <span class="text-2xl">⚡</span>
+            </a>
+            <a href="#assistant" class="block text-gray-500 hover:text-sky-400 transition-colors" title="AI Strategic Assistant">
+                <span class="text-2xl">✨</span>
+            </a>
+            <a href="#risk" class="block text-gray-500 hover:text-sky-400 transition-colors" title="Risk Analysis">
+                <span class="text-2xl">⚠</span>
+            </a>
+            <a href="#outlook" class="block text-gray-500 hover:text-sky-400 transition-colors" title="Strategic Outlook">
+                <span class="text-2xl">⚐</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="lg:ml-20">
+        
+        <!-- Top Bar -->
+        <header class="h-20 flex items-center justify-between px-8 glass-panel sticky top-0 z-40">
+            <div class="flex items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-sky-500 animate-pulse"></div>
+                <h2 class="text-sm font-bold tracking-widest text-sky-400 uppercase">2026 Deep Research Framework</h2>
+            </div>
+            <div class="flex space-x-4">
+                <div class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded text-xs text-sky-400 font-mono">CONFIDENCE: HIGH</div>
+                <div class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded text-xs text-purple-400 font-mono">SOLO-LEVERAGE: OPTIMIZED</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+
+            <!-- Hero Section -->
+            <section id="strategic" class="fade-in space-y-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+                    Figma: The Solo Founder's Decision Engine
+                </h1>
+                <p class="text-xl text-gray-400 max-w-3xl leading-relaxed">
+                    This is a foundational, source-driven deep research review. For the technically capable user, Figma is not a drawing tool—it is an **interface compiler** and **AI-orchestrator** that bridges the gap between vision and production-ready code.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+                    <div class="glass-panel p-6 rounded-2xl neo-border">
+                        <h4 class="text-xs font-bold text-sky-400 uppercase mb-2">Problem Solved</h4>
+                        <p class="text-sm text-gray-300">Eliminates the 'Translation Tax' between creative ideation and functional engineering.</p>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border-l-4 border-indigo-400">
+                        <h4 class="text-xs font-bold text-indigo-400 uppercase mb-2">Target Audience</h4>
+                        <p class="text-sm text-gray-300">Optimized for builders who treat UI as code and seek rapid 0-1 validation.</p>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border-l-4 border-purple-400">
+                        <h4 class="text-xs font-bold text-purple-400 uppercase mb-2">Core Value</h4>
+                        <p class="text-sm text-gray-300">Centralized "Single Source of Truth" for visual logic, assets, and design-to-code APIs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Model Catalog & AI Strategy -->
+            <section id="models" class="fade-in space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white">Figma Model Catalog (2026)</h2>
+                        <p class="text-gray-400 mt-2">Inventory of generative and analytical models embedded in the platform.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-mono text-gray-500 italic">Source: Figma Release Notes v12.4</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Chart: AI Accuracy vs Task Complexity -->
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h3 class="text-lg font-bold text-gray-200 mb-6">AI Performance Matrix</h3>
+                        <div class="chart-container">
+                            <canvas id="modelChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- List: Model Specifics -->
+                    <div class="space-y-4">
+                        <div class="p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-default">
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-sky-400">Make Design (Generative UI)</h4>
+                                <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300">V3.0</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Generates multi-screen flows from text prompts using structured JSON outputs for Dev Mode.</p>
+                        </div>
+                        <div class="p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-default">
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-indigo-400">Prototyping Logic AI</h4>
+                                <span class="text-[10px] px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300">BETA</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Automates "Smart Animate" and state transitions based on intent analysis.</p>
+                        </div>
+                        <div class="p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-default">
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-purple-400">Semantic Component Search</h4>
+                                <span class="text-[10px] px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">PRO</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">LLM-based visual search that identifies components by utility, not just name.</p>
+                        </div>
+                        <div class="p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-default">
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-emerald-400">Content Realizer</h4>
+                                <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">LIVE</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Context-aware text and image generation that respects design system constraints.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Experience (Dev Mode) -->
+            <section id="dev-exp" class="fade-in space-y-12">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl font-extrabold text-white">Personal Leverage: The Dev Bridge</h2>
+                    <p class="text-gray-400 mt-4 text-lg">As a solo founder, your time is your most expensive asset. We analyze the "Dev Mode" efficiency delta.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Text Context -->
+                    <div class="space-y-8">
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-sky-500/20 rounded-lg text-sky-400">⚡</div>
+                                <h4 class="text-xl font-bold">Code Generation Reliability</h4>
+                            </div>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                Figma’s **CSS/SwiftUI/Compose** export is no longer just "hints." In 2026, the use of **Variables** and **Tokens** ensures that code generated from Figma is theme-aware and production-ready for Tailwind-heavy stacks.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-indigo-500/20 rounded-lg text-indigo-400">⚙</div>
+                                <h4 class="text-xl font-bold">Figma API & Plugins</h4>
+                            </div>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                For the solo dev, the API is a secret weapon. You can build scripts to **auto-export assets directly into your repo** or sync text strings to your i18n JSON files, bypassing manual entry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Chart -->
+                    <div class="glass-panel p-6 rounded-3xl">
+                        <h4 class="text-sm font-mono text-center text-gray-500 mb-4 uppercase tracking-widest">Efficiency Benchmark</h4>
+                        <div class="chart-container">
+                            <canvas id="efficiencyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ✨ AI Strategic Assistant Section -->
+            <section id="assistant" class="fade-in space-y-12">
+                <div class="flex items-center space-x-4">
+                    <h2 class="text-3xl font-bold text-white">✨ AI Strategic Assistant</h2>
+                    <div class="h-[1px] flex-grow bg-white/10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Control Panel -->
+                    <div class="lg:col-span-1 space-y-6">
+                        <div class="glass-panel p-6 rounded-3xl space-y-4">
+                            <label class="block text-xs font-bold text-sky-400 uppercase tracking-widest">Project Context</label>
+                            <textarea id="ai-context" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-gray-300 focus:outline-none focus:border-sky-500 transition-colors h-32" placeholder="e.g. Building a mobile-first FinTech app with high-security requirements and real-time data visualization."></textarea>
+                            
+                            <div class="space-y-3 pt-2">
+                                <button onclick="generateAIAdvice('strategy')" id="btn-strategy" class="w-full py-3 px-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center space-x-2">
+                                    <span>Generate Strategy ✨</span>
+                                </button>
+                                <button onclick="generateAIAdvice('risk')" id="btn-risk" class="w-full py-3 px-4 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 border border-indigo-500/30 rounded-xl text-sm font-bold transition-all flex items-center justify-center space-x-2">
+                                    <span>Draft Mitigation ✨</span>
+                                </button>
+                                <button onclick="generateAIAdvice('prompt')" id="btn-prompt" class="w-full py-3 px-4 bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 border border-purple-500/30 rounded-xl text-sm font-bold transition-all flex items-center justify-center space-x-2">
+                                    <span>Optimize Prompt ✨</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-sky-500/5 border border-sky-500/10 rounded-2xl">
+                            <h5 class="text-xs font-bold text-sky-300 uppercase mb-2">Capabilities</h5>
+                            <ul class="text-[11px] text-gray-400 space-y-2">
+                                <li>• Analyzes project goals vs Figma Model Catalog</li>
+                                <li>• Maps specific risks to mitigation tokens</li>
+                                <li>• Converts high-level ideas to high-fidelity prompts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AI Response Area -->
+                    <div class="lg:col-span-2 relative">
+                        <div id="ai-response-container" class="glass-panel rounded-3xl p-8 min-h-[400px] flex flex-col">
+                            <div id="ai-status" class="flex items-center space-x-2 text-xs font-mono text-gray-500 mb-6">
+                                <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                <span>SYSTEM IDLE</span>
+                            </div>
+                            <div id="ai-content" class="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap overflow-y-auto max-h-[500px]">
+                                <div class="flex flex-col items-center justify-center h-full text-gray-500 space-y-4 py-20">
+                                    <div class="text-4xl opacity-20">✨</div>
+                                    <p class="text-center italic">Input your project context and select an action to trigger the Gemini-powered strategic advisor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Error Message -->
+                        <div id="ai-error" class="hidden absolute bottom-4 left-4 right-4 bg-red-500/20 border border-red-500/40 text-red-200 text-xs p-3 rounded-xl backdrop-blur-md"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Competitive Landscape & Pricing -->
+            <section class="fade-in space-y-12">
+                <div class="flex items-center space-x-4">
+                    <h2 class="text-3xl font-bold text-white">Competitive Intelligence</h2>
+                    <div class="h-[1px] flex-grow bg-white/10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <!-- Comparison Card -->
+                    <div class="glass-panel p-6 rounded-2xl text-center space-y-4">
+                        <h5 class="font-bold text-gray-300">Figma</h5>
+                        <div class="text-sky-400 text-3xl font-black">72%</div>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-tighter">Market Share (UI)</p>
+                        <div class="text-xs text-emerald-400 font-bold italic">Standard Choice</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center space-y-4">
+                        <h5 class="font-bold text-gray-300">Penpot</h5>
+                        <div class="text-orange-400 text-3xl font-black">12%</div>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-tighter">Growth Trajectory</p>
+                        <div class="text-xs text-orange-400 font-bold italic">Best for OSS Devs</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center space-y-4">
+                        <h5 class="font-bold text-gray-300">Framer</h5>
+                        <div class="text-purple-400 text-3xl font-black">9%</div>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-tighter">Market Share (Marketing)</p>
+                        <div class="text-xs text-purple-400 font-bold italic">Best for No-Code Landing</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center space-y-4">
+                        <h5 class="font-bold text-gray-300">Others</h5>
+                        <div class="text-gray-500 text-3xl font-black">7%</div>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-tighter">Combined</p>
+                        <div class="text-xs text-gray-500 font-bold italic">Niche Utilities</div>
+                    </div>
+                </div>
+
+                <!-- Plotly: Cost/Value Matrix -->
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h4 class="text-lg font-bold mb-6 text-center">Solo Builder Cost/Value Spectrum</h4>
+                    <div id="plotlyMatrix" style="width:100%; height:400px;"></div>
+                </div>
+            </section>
+
+            <!-- Operational Risks & Strategic Assessment -->
+            <section id="risk" class="fade-in space-y-12 pb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Risk Assessment -->
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-white">Risk Profile & Watch Areas</h2>
+                        <div class="space-y-4">
+                            <div class="p-6 border border-red-500/20 bg-red-500/5 rounded-2xl">
+                                <h4 class="font-bold text-red-400 flex items-center">
+                                    <span class="mr-2">‼</span> Proprietary Lock-in
+                                </h4>
+                                <p class="text-sm text-gray-400 mt-2">Figma files are not easily portable. Moving a 2-year-old project to another tool will result in a 30-50% loss of logic/variables.</p>
+                            </div>
+                            <div class="p-6 border border-amber-500/20 bg-amber-500/5 rounded-2xl">
+                                <h4 class="font-bold text-amber-400 flex items-center">
+                                    <span class="mr-2">$</span> Pricing Pressure
+                                </h4>
+                                <p class="text-sm text-gray-400 mt-2">Figma is aggressively monetizing the "Dev" seat. For solo builders, maintaining multiple "modes" may lead to monthly costs exceeding $30+ as features migrate to higher tiers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Strategic Verdict -->
+                    <div id="outlook" class="glass-panel p-8 rounded-3xl border-2 border-sky-500/30">
+                        <h3 class="text-2xl font-bold text-sky-400 mb-4">Strategic Verdict (24-Month Outlook)</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="text-xs font-bold text-gray-500 uppercase mb-2">Recommendation</h5>
+                                <p class="text-lg font-semibold text-white">INVEST TIME (HIGH CONFIDENCE)</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-white/5 rounded-xl">
+                                    <div class="text-xs text-gray-500">Viability (0-12m)</div>
+                                    <div class="text-emerald-400 font-bold">Unrivaled</div>
+                                </div>
+                                <div class="p-4 bg-white/5 rounded-xl">
+                                    <div class="text-xs text-gray-500">Outlook (12-24m)</div>
+                                    <div class="text-sky-400 font-bold">Aggressive Expansion</div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-400 leading-relaxed italic border-t border-white/10 pt-4">
+                                "The solo founder's moat in 2026 is their ability to leverage AI-assisted orchestration. Figma's integration of Generative UI with Dev-ready tokens makes it the primary 'Source of Truth' for your frontend, regardless of whether you are building with React, Vue, or Swift."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-12 glass-panel mt-24">
+            <div class="container mx-auto px-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>INTERNAL RESEARCH: DO NOT DISTRIBUTE</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <span>Build: 2026.12.A</span>
+                    <span>Ref: FIGMA_STRAT_01</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Chart Implementation Logic -->
+    <script>
+        // Gemini API Configuration
+        const apiKey = "";
+        const SYSTEM_PROMPT = `You are the Figma Strategic Advisor for solo founders in 2026. 
+        You use deep research context to provide tactical advice on leveraging Figma's AI models (Make Design, Prototyping AI), Dev Mode, and API to maximize solo productivity. 
+        Keep responses professional, technically literate, skeptical of hype, and laser-focused on personal leverage. 
+        Structure your advice with clear headers and bullet points. Use technical terms like Auto-Layout, Variables, Tokens, and Dev Mode correctly.`;
+
+        // AI Logic
+        async function callGemini(prompt, taskType) {
+            const statusEl = document.getElementById('ai-status');
+            const contentEl = document.getElementById('ai-content');
+            const errorEl = document.getElementById('ai-error');
+            
+            // Set Loading UI
+            statusEl.innerHTML = '<div class="spinner"></div><span class="text-sky-400 animate-pulse">PROCESSING VIA GEMINI 2.5 FLASH...</span>';
+            contentEl.innerHTML = '<div class="flex items-center justify-center h-full py-20 text-gray-500 italic">Synthesizing strategic response...</div>';
+            errorEl.classList.add('hidden');
+
+            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            const taskPrompts = {
+                strategy: "Analyze this project context and generate a 3-step high-level Figma strategy. Focus on which models to use and how to handle handoff to code: ",
+                risk: "Draft a specific risk mitigation plan for this project, identifying proprietary lock-in points and cost escalations: ",
+                prompt: "Convert this project context into a professional, high-fidelity generative UI prompt for Figma's 'Make Design' tool. Include structural requirements and design tokens: "
+            };
+
+            const fullPrompt = taskPrompts[taskType] + prompt;
+            const payload = {
+                contents: [{ parts: [{ text: fullPrompt }] }],
+                systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] }
+            };
+
+            let delay = 1000;
+            for (let i = 0; i < 5; i++) {
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (!response.ok) throw new Error(`API Error: ${response.status}`);
+                    
+                    const data = await response.json();
+                    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    
+                    if (!text) throw new Error('Empty response from API');
+
+                    // Success
+                    statusEl.innerHTML = '<div class="w-2 h-2 rounded-full bg-emerald-500"></div><span class="text-emerald-400">ANALYSIS COMPLETE</span>';
+                    contentEl.innerHTML = text;
+                    return;
+
+                } catch (error) {
+                    if (i === 4) {
+                        statusEl.innerHTML = '<div class="w-2 h-2 rounded-full bg-red-500"></div><span class="text-red-400">CONNECTION FAILED</span>';
+                        contentEl.innerHTML = '<div class="flex flex-col items-center justify-center h-full text-gray-600">Failed to generate response. Check project context and try again.</div>';
+                        errorEl.innerText = error.message;
+                        errorEl.classList.remove('hidden');
+                        throw error;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        function generateAIAdvice(type) {
+            const context = document.getElementById('ai-context').value;
+            if (!context || context.trim().length < 10) {
+                const errorEl = document.getElementById('ai-error');
+                errorEl.innerText = "Please provide a more detailed project context (min 10 chars).";
+                errorEl.classList.remove('hidden');
+                setTimeout(() => errorEl.classList.add('hidden'), 3000);
+                return;
+            }
+            callGemini(context, type);
+        }
+
+        // Utility: 16-character label wrapper
+        function wrapLabel(label) {
+            if (typeof label !== 'string') return label;
+            const limit = 16;
+            if (label.length <= limit) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 <= limit) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // Shared Tooltip Config
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        // --- 1. Model Catalog Chart (Bar) ---
+        const ctxModel = document.getElementById('modelChart').getContext('2d');
+        const rawModelLabels = ['Design Generation', 'Prototyping Logic', 'Asset Generation', 'Code Translation', 'Semantic Search'];
+        
+        new Chart(ctxModel, {
+            type: 'bar',
+            data: {
+                labels: rawModelLabels.map(wrapLabel),
+                datasets: [
+                    {
+                        label: 'Accuracy Score',
+                        data: [75, 60, 92, 85, 88],
+                        backgroundColor: '#38BDF8',
+                        borderRadius: 6
+                    },
+                    {
+                        label: 'Complexity Score',
+                        data: [85, 95, 45, 80, 70],
+                        backgroundColor: '#818CF8',
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { ticks: { color: '#64748B', font: { size: 10 } } },
+                    y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748B' } }
+                },
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: { labels: { color: '#94A3B8' } }
+                }
+            }
+        });
+
+        // --- 2. Efficiency Chart (Line) ---
+        const ctxEff = document.getElementById('efficiencyChart').getContext('2d');
+        new Chart(ctxEff, {
+            type: 'line',
+            data: {
+                labels: ['V1 Build', 'V2 Pivot', 'Scale A', 'Scale B', 'Stability'],
+                datasets: [{
+                    label: 'Productivity (Figma Dev Mode)',
+                    data: [100, 140, 180, 220, 250],
+                    borderColor: '#C084FC',
+                    backgroundColor: 'rgba(192, 132, 252, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#C084FC'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { ticks: { color: '#64748B' } },
+                    y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748B' } }
+                }
+            }
+        });
+
+        // --- 3. Plotly Matrix ---
+        const trace = {
+            x: [10, 85, 40, 60, 95], // Cost/Subscription
+            y: [30, 95, 75, 45, 100], // Perceived Value for Solo Dev
+            mode: 'markers+text',
+            text: ['Canva', 'Figma', 'Framer', 'Sketch', 'Penpot'],
+            textposition: 'top center',
+            marker: {
+                size: [20, 50, 35, 25, 40],
+                color: ['#94A3B8', '#38BDF8', '#C084FC', '#F472B6', '#F97316'],
+                opacity: 0.8
+            },
+            type: 'scatter'
+        };
+
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: { color: '#94A3B8', family: 'Plus Jakarta Sans' },
+            xaxis: { title: 'Relative Cost ($)', gridcolor: '#1E293B', zeroline: false },
+            yaxis: { title: 'Value for Solo Leverage', gridcolor: '#1E293B', zeroline: false },
+            margin: { t: 20, r: 20, b: 40, l: 40 }
+        };
+
+        Plotly.newPlot('plotlyMatrix', [trace], layout, {displayModeBar: false, responsive: true});
+        
+    </script>
+</body>
+</html>

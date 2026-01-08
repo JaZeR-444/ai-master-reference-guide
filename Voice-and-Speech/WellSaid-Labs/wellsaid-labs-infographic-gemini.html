@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellSaid Labs: Deep Research Analysis 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background-color: #ffffff; color: #000000; font-family: 'Inter', sans-serif; }
+        .chart-container { position: relative; width: 100%; height: 280px; }
+        .card { background: white; border-radius: 0.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s; }
+        .card:hover { border-color: #10b981; }
+        .accent-emerald { color: #10b981; }
+        .bg-emerald { background-color: #10b981; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-black rounded flex items-center justify-center text-white font-bold">W</div>
+                <h1 class="text-xl font-bold tracking-tight">WellSaid <span class="text-gray-400 font-normal italic">Studio Audit</span></h1>
+            </div>
+            <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest border border-gray-200 px-3 py-1 rounded">Premium Standard 2026</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="inline-flex items-center px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider">The Studio Choice</div>
+                <h2 class="text-5xl font-extrabold text-black leading-none">Unmatched Vocal <br><span class="accent-emerald">Authority.</span></h2>
+                <p class="text-lg text-gray-500 max-w-xl">
+                    WellSaid Labs remains the industry benchmark for English-centric high-fidelity audio, prioritizing ethical sourcing and studio-grade output for high-trust environments.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <div class="p-4 bg-gray-50 rounded-lg flex-1">
+                        <p class="text-2xl font-bold">96kHz</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase">Max Sample Rate</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg flex-1">
+                        <p class="text-2xl font-bold">100%</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase">Ethically Sourced</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg flex-1">
+                        <p class="text-2xl font-bold">SOC2</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase">Certified</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-6 bg-black text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-[10px] font-bold opacity-50 uppercase tracking-widest mb-4">Strategic Positioning</h3>
+                    <p class="text-xl font-medium leading-relaxed italic">"When the voice is the brand, WellSaid is the only choice."</p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800">
+                    <p class="text-sm font-bold">Market Viability</p>
+                    <div class="w-full bg-gray-800 h-2 rounded-full mt-2">
+                        <div class="bg-emerald-500 h-2 rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="card p-8">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Capability Profile: Studio vs Market</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+            <div class="card p-8 bg-white border-l-4 border-l-emerald-500">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Premium Features</h3>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="text-2xl">🎬</div>
+                        <div>
+                            <h4 class="font-bold">AI Director</h4>
+                            <p class="text-xs text-gray-500">Real-time, word-level editing of pitch, pace, and emphasis without re-generating the clip.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-2xl">🩺</div>
+                        <div>
+                            <h4 class="font-bold">Domain Specific Accuracy</h4>
+                            <p class="text-xs text-gray-500">Industry-leading pronunciation for 9,000+ medical and 500+ legal terms.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-2xl">🤝</div>
+                        <div>
+                            <h4 class="font-bold">Ethical Profit Sharing</h4>
+                            <p class="text-xs text-gray-500">Revenue-sharing models for the voice actors whose data powers the Caruso engine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <h3 class="text-3xl font-black italic">Solo Builder Verdict</h3>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    WellSaid Labs is the **Authority Engine**. If your project requires the highest perceived trust (Healthcare, Finance, High-End Training), WellSaid's premium cost is justified by its zero-artifact stability.
+                </p>
+                <div class="flex gap-4">
+                    <div class="px-4 py-2 rounded bg-black text-white font-black text-[10px] uppercase">Premium Tier</div>
+                    <div class="px-4 py-2 rounded border border-gray-200 text-gray-500 font-black text-[10px] uppercase">Stable / Secure</div>
+                </div>
+            </div>
+            <div class="card p-10 flex flex-col items-center justify-center">
+                <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6">Market Retention Score</h3>
+                <div class="w-48 h-48 relative">
+                    <canvas id="gaugeChart"></canvas>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center pt-8">
+                        <span class="text-5xl font-black text-black">92%</span>
+                        <span class="text-[10px] font-bold text-emerald-500 uppercase mt-1 tracking-widest">Confidence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 border-t border-gray-100 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.5em]">
+        WellSaid Labs Deep Research &bull; Solo Builder Focus 2026
+    </footer>
+
+    <script>
+        // Radar Chart
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Studio Fidelity', 'Vocal Stability', 'Domain Lexicon', 'Security', 'Creative Range'],
+                datasets: [{
+                    label: 'WellSaid Labs',
+                    data: [5, 5, 5, 5, 3],
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    borderColor: '#10b981',
+                    pointBackgroundColor: '#10b981'
+                }, {
+                    label: 'Market Avg',
+                    data: [3, 3, 2, 3, 5],
+                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                    borderColor: '#000000',
+                    pointBackgroundColor: '#000000'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { r: { grid: { color: '#f3f4f6' }, ticks: { display: false } } },
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+
+        // Gauge Chart
+        new Chart(document.getElementById('gaugeChart'), {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [92, 8],
+                    backgroundColor: ['#10b981', '#f3f4f6'],
+                    borderWidth: 0,
+                    circumference: 240,
+                    rotation: 240,
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, cutout: '85%', plugins: { legend: { display: false } } }
+        });
+    </script>
+</body>
+</html>

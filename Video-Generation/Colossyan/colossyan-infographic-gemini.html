@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colossyan: Deep Research Analysis 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .flow-step {
+            position: relative;
+        }
+        .flow-arrow::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #94a3b8;
+        }
+        @media (max-width: 768px) {
+            .flow-arrow::after {
+                content: '↓';
+                right: 50%;
+                top: auto;
+                bottom: -25px;
+                transform: translateX(50%);
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">C</div>
+                <h1 class="text-xl font-bold text-slate-900">Colossyan <span class="text-slate-500 font-normal">Deep Research</span></h1>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#overview" class="hover:text-blue-600">Overview</a>
+                <a href="#landscape" class="hover:text-blue-600">Landscape</a>
+                <a href="#economics" class="hover:text-blue-600">Economics</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <section id="overview" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase">
+                    2026 Analysis
+                </div>
+                <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">
+                    The Leader in <br><span class="gradient-text">Interactive L&D Video</span>
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Colossyan has successfully pivoted from a simple video tool to a full-stack learning platform. Its focus on interactivity and corporate workflows distinguishes it from viral marketing competitors.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white border-l-4 border-blue-600 rounded shadow-sm">
+                        <p class="text-xs text-slate-500 uppercase font-bold">Primary Focus</p>
+                        <p class="text-lg font-semibold text-slate-900">Corporate Training</p>
+                    </div>
+                    <div class="p-4 bg-white border-l-4 border-sky-500 rounded shadow-sm">
+                        <p class="text-xs text-slate-500 uppercase font-bold">Key Differentiator</p>
+                        <p class="text-lg font-semibold text-slate-900">Interactive Scenarios</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4">Capability Focus Area</h3>
+                <div class="chart-container">
+                    <canvas id="capabilityChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-4">The Colossyan Workflow</h2>
+                <p class="text-slate-300">Turning documents into production-ready training modules in minutes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
+                    <div class="text-3xl mb-3">📄</div>
+                    <h4 class="font-bold text-blue-400">Ingest</h4>
+                    <p class="text-xs text-slate-400">Upload PDF, PPT, or use AI Script Assistant.</p>
+                </div>
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
+                    <div class="text-3xl mb-3">👤</div>
+                    <h4 class="font-bold text-sky-400">Cast</h4>
+                    <p class="text-xs text-slate-400">Select Avatars & configure side-views/emotions.</p>
+                </div>
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
+                    <div class="text-3xl mb-3">🎮</div>
+                    <h4 class="font-bold text-blue-400">Interact</h4>
+                    <p class="text-xs text-slate-400">Add Quizzes and Branching Scenario logic.</p>
+                </div>
+                <div class="flow-step bg-slate-800 border border-slate-700 p-6 rounded-xl text-center">
+                    <div class="text-3xl mb-3">🚀</div>
+                    <h4 class="font-bold text-emerald-400">Deploy</h4>
+                    <p class="text-xs text-slate-400">Export to SCORM, LMS, or via public URL.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="landscape" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="card p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4">Market Positioning Radar</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-2 h-8 bg-blue-600 rounded mr-3"></span>
+                        Strategic Strengths
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <strong>Education DNA:</strong> Better SCORM/LMS integration than rivals.</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <strong>Avatar Nuance:</strong> Side-views and gestures improve realism.</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <strong>Scale:</strong> 1-click translation for global teams.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-2 h-8 bg-red-500 rounded mr-3"></span>
+                        Key Limitations
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start"><span class="text-red-500 mr-2">⚠</span> <strong>Creative Constraints:</strong> Not built for high-energy social content.</li>
+                        <li class="flex items-start"><span class="text-red-500 mr-2">⚠</span> <strong>No Open API:</strong> Harder to integrate into custom apps compared to HeyGen.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="economics" class="card p-8 bg-slate-50 border border-slate-200">
+            <h3 class="text-xl font-bold text-slate-900 text-center mb-8">Economic Viability for Solo Builders</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="chart-container">
+                    <canvas id="verdictChart"></canvas>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-6 bg-blue-900 text-white rounded-xl">
+                        <p class="text-sm opacity-75 uppercase tracking-wider mb-1">Confidence Score</p>
+                        <p class="text-4xl font-extrabold text-sky-400">85%</p>
+                        <p class="text-xs mt-2 opacity-75">High viability for specialized educational service businesses.</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl text-center">
+                        <p class="text-sm text-slate-500">Verdict: <strong>Invest Learning Time</strong> if your goal is building a digital training empire or professional courses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
+        Generated for AI Research Archive &bull; 2026 Colossyan Deep Dive
+    </footer>
+
+    <script>
+        // Feature Distribution
+        new Chart(document.getElementById('capabilityChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Avatar Quality', 'Interactivity', 'LMS Workflow', 'Translation'],
+                datasets: [{
+                    data: [30, 40, 20, 10],
+                    backgroundColor: ['#2563eb', '#0ea5e9', '#6366f1', '#94a3b8'],
+                    borderWidth: 0
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' } } }
+        });
+
+        // Competitive Radar
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['L&D Workflow', 'Avatar Realism', 'Interactivity', 'Cost Efficiency', 'API Access'],
+                datasets: [{
+                    label: 'Colossyan',
+                    data: [5, 4, 5, 4, 2],
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)',
+                    borderColor: '#2563eb'
+                }, {
+                    label: 'Synthesia',
+                    data: [4, 5, 3, 3, 4],
+                    backgroundColor: 'rgba(234, 179, 8, 0.2)',
+                    borderColor: '#eab308'
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { r: { suggestedMin: 0, suggestedMax: 5 } } }
+        });
+
+        // Verdict Gauge
+        new Chart(document.getElementById('verdictChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Viability', 'Risk'],
+                datasets: [{
+                    data: [85, 15],
+                    backgroundColor: ['#22c55e', '#f1f5f9'],
+                    borderWidth: 0,
+                    circumference: 180,
+                    rotation: 270,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '80%',
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'High Leverage',
+                        position: 'bottom',
+                        font: { size: 18, weight: 'bold' },
+                        color: '#16a34a'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

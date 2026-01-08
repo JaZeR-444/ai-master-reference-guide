@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murf AI: Deep Research Analysis 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background-color: #f1f5f9; color: #0f172a; font-family: 'Inter', sans-serif; }
+        .chart-container { position: relative; width: 100%; height: 280px; }
+        .card { background: white; border-radius: 0.75rem; border: 1px solid #e2e8f0; }
+        .accent-murf { color: #0ea5e9; }
+        .bg-murf { background-color: #0ea5e9; }
+        .bg-navy { background-color: #0f172a; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-navy border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-murf rounded flex items-center justify-center text-white font-bold">M</div>
+                <h1 class="text-xl font-bold tracking-tight text-white uppercase">MURF AI <span class="text-slate-400 font-normal italic">Enterprise Audit</span></h1>
+            </div>
+            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Confidential v2026.1</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider">The Enterprise Standard</div>
+                <h2 class="text-5xl font-extrabold text-slate-900 leading-none italic">Professional Voiceovers <br><span class="accent-murf">at Scale.</span></h2>
+                <p class="text-lg text-slate-500 max-w-xl">
+                    Murf AI has carved a dominant niche in corporate communications by prioritizing security, collaborative workflows, and seamless integrations with Canva and Google Slides.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">120+</p>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Studio Voices</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">SOC2</p>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Compliance</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">20+</p>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Global Langs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-6 bg-navy text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-[10px] font-bold opacity-50 uppercase tracking-widest mb-4">Strategic Advantage</h3>
+                    <p class="text-xl font-medium leading-relaxed">"While others chase influencers, Murf captures the boardroom."</p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-slate-800">
+                    <p class="text-sm font-bold">Market Viability</p>
+                    <div class="w-full bg-slate-800 h-2 rounded-full mt-2">
+                        <div class="bg-murf h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="card p-8">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Capability Profile vs Competitors</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+            <div class="card p-8 bg-white border-l-4 border-l-murf">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Workflow Efficiency</h3>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="text-2xl">⚡</div>
+                        <div>
+                            <h4 class="font-bold">One-Click In-App VO</h4>
+                            <p class="text-xs text-slate-500">Generate voiceovers directly within Canva or Google Slides without exporting files.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-2xl">🎓</div>
+                        <div>
+                            <h4 class="font-bold">Teachable Pronunciation</h4>
+                            <p class="text-xs text-slate-500">Teach AI specific company jargon or complex technical terms once, use forever.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-2xl">🔄</div>
+                        <div>
+                            <h4 class="font-bold">AI Voice Changer</h4>
+                            <p class="text-xs text-slate-500">Upload raw home recordings and transform them into professional studio quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <h3 class="text-3xl font-black italic">Solo Builder Verdict</h3>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    Murf AI is the **Reliability Engine**. If you are building professional training tools, corporate service products, or pitch decks, Murf's SOC2 security and workflow tools provide the highest ROI.
+                </p>
+                <div class="flex gap-4">
+                    <div class="px-4 py-2 rounded bg-navy text-white font-black text-[10px] uppercase">Enterprise Grade</div>
+                    <div class="px-4 py-2 rounded border border-slate-200 text-slate-500 font-black text-[10px] uppercase">Stable Choice</div>
+                </div>
+            </div>
+            <div class="card p-10 flex flex-col items-center justify-center">
+                <div class="w-48 h-48 relative">
+                    <canvas id="gaugeChart"></canvas>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center pt-8">
+                        <span class="text-5xl font-black text-navy">95%</span>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase mt-1 tracking-widest">Viability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 border-t border-slate-200 text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.5em]">
+        Murf AI Deep Research &bull; Solo Builder Focus 2026
+    </footer>
+
+    <script>
+        // Radar Chart
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Security', 'Integration', 'Stability', 'Pro Tone', 'Creative Range'],
+                datasets: [{
+                    label: 'Murf AI',
+                    data: [5, 5, 5, 5, 3],
+                    backgroundColor: 'rgba(14, 165, 233, 0.2)',
+                    borderColor: '#0ea5e9',
+                    pointBackgroundColor: '#0ea5e9'
+                }, {
+                    label: 'Market Avg',
+                    data: [2, 3, 3, 4, 4],
+                    backgroundColor: 'rgba(15, 23, 42, 0.05)',
+                    borderColor: '#0f172a',
+                    pointBackgroundColor: '#0f172a'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { r: { grid: { color: '#e2e8f0' }, ticks: { display: false } } },
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+
+        // Gauge Chart
+        new Chart(document.getElementById('gaugeChart'), {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [95, 5],
+                    backgroundColor: ['#0f172a', '#f1f5f9'],
+                    borderWidth: 0,
+                    circumference: 240,
+                    rotation: 240,
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, cutout: '85%', plugins: { legend: { display: false } } }
+        });
+    </script>
+</body>
+</html>

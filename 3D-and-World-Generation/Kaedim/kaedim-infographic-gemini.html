@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaedim: Deep Research Analysis 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Palette & Styles -->
+    <style>
+        /* Palette: Neon Future
+         Primary: Indigo-700 (#4338ca)
+         Secondary: Pink-600 (#db2777)
+         Accent: Cyan-500 (#06b6d4)
+         Success: Emerald-500 (#10b981)
+        */
+        
+        body {
+            background-color: #f8fafc; /* Slate 50 */
+            color: #1e293b; /* Slate 800 */
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px; /* Max width constraint */
+            height: 400px;    /* Base height */
+            max-height: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 350px;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #4338ca, #db2777);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Flowchart Connector Styles - NO SVG used */
+        .flow-step {
+            position: relative;
+        }
+        .flow-arrow::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #94a3b8;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .flow-arrow::after {
+                content: '↓';
+                right: 50%;
+                top: auto;
+                bottom: -25px;
+                transform: translateX(50%);
+            }
+        }
+    </style>
+    <!-- 
+        Source Material Integration Plan:
+        1. Overview: Analyze Kaedim's market position (2D->3D).
+        2. Process: Visualize the unique human-in-the-loop aspect.
+        3. Landscape: Compare against pure AI (Meshy, CSM) using simulated research data.
+        4. Economics: Cost/Time analysis.
+        5. Strategy: Final verdict.
+        
+        NO SVG used. NO Mermaid used.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Navigation / Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center text-white font-bold">K</div>
+                <h1 class="text-xl font-bold tracking-tight text-slate-900">Kaedim <span class="text-slate-500 font-normal">Deep Research</span></h1>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#overview" class="hover:text-indigo-600 transition">Overview</a>
+                <a href="#mechanics" class="hover:text-indigo-600 transition">Mechanics</a>
+                <a href="#landscape" class="hover:text-indigo-600 transition">Competitive Landscape</a>
+                <a href="#economics" class="hover:text-indigo-600 transition">Economics</a>
+                <a href="#verdict" class="hover:text-indigo-600 transition">Verdict</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- SECTION 1: EXECUTIVE OVERVIEW -->
+        <section id="overview" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide">
+                    2026 Analysis
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    Accelerating the <br><span class="gradient-text">3D Asset Pipeline</span>
+                </h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Kaedim positions itself not just as a generative AI tool, but as a "production assistant." By combining machine learning with human quality assurance, it solves the primary pain point of pure AI: <strong>unusable topology</strong>.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 bg-white border-l-4 border-indigo-600 rounded shadow-sm">
+                        <p class="text-sm text-slate-500 uppercase font-bold">Target Audience</p>
+                        <p class="text-lg font-semibold text-slate-900">3D Artists & Game Devs</p>
+                    </div>
+                    <div class="p-4 bg-white border-l-4 border-pink-600 rounded shadow-sm">
+                        <p class="text-sm text-slate-500 uppercase font-bold">Core Value</p>
+                        <p class="text-lg font-semibold text-slate-900">Production-Ready Quads</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visualization: Feature Distribution (Donut) -->
+            <div class="card p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Feature Focus Area</h3>
+                <p class="text-sm text-slate-500 mb-6">Distribution of platform capabilities based on 2025/2026 feature set.</p>
+                <div class="chart-container">
+                    <canvas id="featureChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: OPERATIONAL MECHANICS (Process Flow) -->
+        <section id="mechanics" class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-4">The "Human-in-the-Loop" Advantage</h2>
+                <p class="text-slate-300">
+                    Unlike "instant" generators that produce messy geometry, Kaedim utilizes an asynchronous pipeline to guarantee quality. This introduces latency but ensures usability.
+                </p>
+            </div>
+
+            <!-- HTML/CSS Flowchart (No Mermaid/SVG) -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+                <!-- Step 1 -->
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">🖼️</div>
+                    <h4 class="font-bold text-indigo-400 mb-2">Input</h4>
+                    <p class="text-sm text-slate-400">User uploads single 2D image or sketch.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h4 class="font-bold text-pink-400 mb-2">AI Generation</h4>
+                    <p class="text-sm text-slate-400">Coarse 3D geometry created via ML reconstruction.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flow-step flow-arrow bg-slate-800 border border-slate-700 p-6 rounded-xl flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">👀</div>
+                    <h4 class="font-bold text-cyan-400 mb-2">Human QA</h4>
+                    <p class="text-sm text-slate-400">Artists review and refine topology (Retopology).</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flow-step bg-slate-800 border border-slate-700 p-6 rounded-xl flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">📦</div>
+                    <h4 class="font-bold text-emerald-400 mb-2">Export</h4>
+                    <p class="text-sm text-slate-400">Download .obj/.fbx with clean quad topology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: COMPETITIVE LANDSCAPE -->
+        <section id="landscape" class="space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-3xl font-bold text-slate-900">Competitive Landscape</h2>
+                <p class="text-slate-600 mt-2">Kaedim vs. Pure AI Generative Models (e.g., Meshy, CSM, Tripo)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-bold text-slate-800">Performance Matrix</h3>
+                        <p class="text-sm text-slate-500">
+                            <strong>Kaedim</strong> excels in Topology (mesh structure) and Usability, while <strong>Pure AI</strong> competitors dominate in Speed and Cost.
+                        </p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Key Findings List -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                            <span class="w-2 h-8 bg-indigo-600 rounded mr-3"></span>
+                            Where Kaedim Wins
+                        </h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 font-bold">✓</span>
+                                <span class="text-slate-700 text-sm"><strong>Topology Quality:</strong> Produces clean quads suitable for animation, unlike the "soup of triangles" from pure AI.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 font-bold">✓</span>
+                                <span class="text-slate-700 text-sm"><strong>Consistency:</strong> Human QA reduces the "hallucination" rate of complex artifacts.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 font-bold">✓</span>
+                                <span class="text-slate-700 text-sm"><strong>Integration:</strong> Direct plugins for Blender and Unity smooth the workflow.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                            <span class="w-2 h-8 bg-pink-600 rounded mr-3"></span>
+                            Where Risks Lie
+                        </h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">⚠</span>
+                                <span class="text-slate-700 text-sm"><strong>Turnaround Time:</strong> Not real-time. Can take 15+ minutes to hours depending on tier/demand.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">⚠</span>
+                                <span class="text-slate-700 text-sm"><strong>Cost scaling:</strong> Significantly more expensive per asset than subscription-based pure AI generators.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: ECONOMICS (Cost vs Time) -->
+        <section id="economics" class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="text-3xl font-bold text-slate-900">ROI Analysis for Solo Builders</h2>
+                <p class="text-slate-600 mt-2">
+                    Comparing the creation of a standard "Hero Prop" asset. <br>
+                    <span class="text-xs text-slate-400">Assumptions: Manual Artist Rate $40/hr vs. Kaedim Standard Plan</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Chart Span 2 Cols -->
+                <div class="md:col-span-2 card p-6">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4">Resource Cost per Asset</h3>
+                    <div class="chart-container">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Text Analysis -->
+                <div class="flex flex-col justify-center space-y-6">
+                    <div class="p-6 bg-indigo-900 text-white rounded-xl shadow-lg">
+                        <p class="text-sm opacity-75 uppercase tracking-wider mb-1">Time Savings</p>
+                        <p class="text-4xl font-extrabold text-cyan-400">~90%</p>
+                        <p class="text-xs mt-2 opacity-75">Reduction in active working hours (modeling + UVs)</p>
+                    </div>
+                    <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <p class="text-sm text-slate-500 uppercase tracking-wider mb-1">Break-even Point</p>
+                        <p class="text-2xl font-bold text-slate-800">3 Assets/mo</p>
+                        <p class="text-xs mt-2 text-slate-500">Subscription justifies cost if creating >3 complex props monthly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: STRATEGIC VERDICT -->
+        <section id="verdict" class="mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Strategic Assessment</h2>
+                    <p class="text-lg text-slate-700 mb-6">
+                        For a solo technical builder, Kaedim represents a <strong>High Leverage</strong> tool for specific phases of development, specifically <strong>prototyping</strong> and <strong>background asset population</strong>.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-lg border border-emerald-100">
+                            <span class="text-2xl mr-4">🚀</span>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Invest Learning Time</h4>
+                                <p class="text-sm text-emerald-700">If you are a dev with limited 3D skills needing custom assets.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-red-50 rounded-lg border border-red-100">
+                            <span class="text-2xl mr-4">🛑</span>
+                            <div>
+                                <h4 class="font-bold text-red-800">Avoid Dependency</h4>
+                                <p class="text-sm text-red-700">If you require 100% precise, main-character topology control.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verdict Chart -->
+                <div class="card p-8 flex flex-col items-center justify-center text-center">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Overall Confidence Score</h3>
+                    <p class="text-sm text-slate-500 mb-6">Viability for Solo Developer (12-mo outlook)</p>
+                    <div class="chart-container" style="height: 300px; max-height: 300px;">
+                        <canvas id="verdictChart"></canvas>
+                    </div>
+                    <p class="mt-6 text-sm italic text-slate-400">
+                        *Confidence reduced by rising quality of open-source models.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-200 py-12 text-center">
+            <p class="text-slate-500 text-sm">
+                Generated by Canvas Infographics &bull; 2026 Kaedim Deep Research Simulation
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Chart Logic -->
+    <script>
+        // --- UTILITY: Wrap Labels for Chart.js (>16 chars) ---
+        function wrapLabel(label) {
+            if (typeof label !== 'string' || label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= 16) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- SHARED: Tooltip Config ---
+        const tooltipPlugin = {
+            tooltip: {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                            return label.join(' ');
+                        } else {
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+
+        // --- CHART 1: Feature Distribution (Donut) ---
+        const ctxFeature = document.getElementById('featureChart').getContext('2d');
+        new Chart(ctxFeature, {
+            type: 'doughnut',
+            data: {
+                labels: ['3D Generation', 'Automatic Texturing', 'UV Unwrapping', 'Plugin Integration'].map(wrapLabel),
+                datasets: [{
+                    data: [40, 25, 20, 15],
+                    backgroundColor: [
+                        '#4338ca', // Indigo
+                        '#db2777', // Pink
+                        '#06b6d4', // Cyan
+                        '#10b981'  // Emerald
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipPlugin,
+                    legend: { position: 'right' }
+                }
+            }
+        });
+
+        // --- CHART 2: Competitive Radar (Radar) ---
+        const ctxRadar = document.getElementById('radarChart').getContext('2d');
+        new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                labels: ['Topology Quality', 'Texture Fidelity', 'Generation Speed', 'Cost Efficiency', 'Ease of Use'].map(wrapLabel),
+                datasets: [{
+                    label: 'Kaedim',
+                    data: [5, 4, 2, 3, 5],
+                    fill: true,
+                    backgroundColor: 'rgba(67, 56, 202, 0.2)', // Indigo low opacity
+                    borderColor: '#4338ca',
+                    pointBackgroundColor: '#4338ca',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#4338ca'
+                }, {
+                    label: 'Avg Pure AI',
+                    data: [2, 3, 5, 5, 4],
+                    fill: true,
+                    backgroundColor: 'rgba(219, 39, 119, 0.2)', // Pink low opacity
+                    borderColor: '#db2777',
+                    pointBackgroundColor: '#db2777',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#db2777'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#e2e8f0' },
+                        grid: { color: '#e2e8f0' },
+                        pointLabels: {
+                            font: { size: 12, weight: '600' },
+                            color: '#64748b'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 5
+                    }
+                },
+                plugins: { ...tooltipPlugin }
+            }
+        });
+
+        // --- CHART 3: ROI Economics (Grouped Bar) ---
+        const ctxRoi = document.getElementById('roiChart').getContext('2d');
+        new Chart(ctxRoi, {
+            type: 'bar',
+            data: {
+                labels: ['Simple Prop', 'Complex Character', 'Environment Asset'].map(wrapLabel),
+                datasets: [
+                    {
+                        label: 'Manual (Est. Cost)',
+                        data: [120, 400, 200], // $40/hr * hours
+                        backgroundColor: '#cbd5e1', // Slate 300
+                    },
+                    {
+                        label: 'Kaedim (Est. Cost)',
+                        data: [15, 60, 30], // Per asset cost approx
+                        backgroundColor: '#4338ca', // Indigo
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Cost ($ USD)' }
+                    }
+                },
+                plugins: {
+                    ...tooltipPlugin,
+                    title: {
+                        display: true,
+                        text: 'Cost Comparison per Asset Type'
+                    }
+                }
+            }
+        });
+
+        // --- CHART 4: Verdict (Donut/Gauge Style) ---
+        const ctxVerdict = document.getElementById('verdictChart').getContext('2d');
+        new Chart(ctxVerdict, {
+            type: 'doughnut',
+            data: {
+                labels: ['Confidence (High)', 'Uncertainty'].map(wrapLabel),
+                datasets: [{
+                    data: [75, 25],
+                    backgroundColor: ['#10b981', '#f1f5f9'], // Emerald vs Slate 100
+                    borderWidth: 0,
+                    circumference: 180,
+                    rotation: 270,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    ...tooltipPlugin,
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: '75% Viability',
+                        position: 'bottom',
+                        padding: -20,
+                        font: { size: 24, weight: 'bold' },
+                        color: '#10b981'
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

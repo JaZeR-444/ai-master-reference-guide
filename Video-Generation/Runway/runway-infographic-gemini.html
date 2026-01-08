@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runway: Deep Research Analysis 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; }
+        .chart-container { position: relative; width: 100%; height: 300px; }
+        .card { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 1rem; }
+        .gradient-runway { background: linear-gradient(135deg, #ff3366, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-runway { background: linear-gradient(135deg, #ff3366, #ff00ff); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-black/50 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center font-black">R</div>
+                <h1 class="text-xl font-black uppercase tracking-widest italic">Runway <span class="text-white/40 font-normal">Gen-2026</span></h1>
+            </div>
+            <div class="text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">World Model Research</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+
+        <section class="text-center space-y-8">
+            <div class="inline-block px-4 py-1 rounded-full border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Foundation Model Audit</div>
+            <h2 class="text-6xl md:text-8xl font-black leading-none">The Era of <br><span class="gradient-runway">World Simulation</span></h2>
+            <p class="max-w-2xl mx-auto text-lg text-white/50">
+                Runway isn't just generating pixels; it's simulating physics. With Gen-3 and the upcoming Gen-4, the boundary between render and reality is dissolving.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="card p-8 col-span-1 md:col-span-2 space-y-4">
+                <h3 class="text-xs font-black text-white/30 uppercase tracking-widest">Technological Lead</h3>
+                <p class="text-3xl font-bold">11:1 Rendering Speed</p>
+                <p class="text-sm text-white/50">Gen-3 Turbo generates high-fidelity video 11x faster than real-time playback.</p>
+            </div>
+            <div class="card p-8 flex flex-col justify-between">
+                <h3 class="text-xs font-black text-white/30 uppercase tracking-widest">native res</h3>
+                <p class="text-4xl font-black">4K</p>
+                <p class="text-[10px] text-white/30 uppercase">In-platform Upscaling</p>
+            </div>
+            <div class="card p-8 flex flex-col justify-between border-white/20">
+                <h3 class="text-xs font-black text-white/30 uppercase tracking-widest">status</h3>
+                <p class="text-2xl font-black text-green-500">DOMINANT</p>
+                <p class="text-[10px] text-white/30 uppercase">Market Leader (VFX)</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-12">
+                <h3 class="text-4xl font-black italic">Creative Control Engine</h3>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-white/5 rounded-full flex items-center justify-center text-xl">🖌️</div>
+                        <div>
+                            <h4 class="font-bold text-xl">Multi-Motion Brush</h4>
+                            <p class="text-sm text-white/40">Independently control the motion of up to 5 subjects within a single frame.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-white/5 rounded-full flex items-center justify-center text-xl">🎥</div>
+                        <div>
+                            <h4 class="font-bold text-xl">Camera Path Control</h4>
+                            <p class="text-sm text-white/40">Define complex 3D camera moves (Dolly, Orbit, Pan) using intuitive visual paths.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-white/5 rounded-full flex items-center justify-center text-xl">🎭</div>
+                        <div>
+                            <h4 class="font-bold text-xl">Act-One Performance</h4>
+                            <p class="text-sm text-white/40">Drive character animations using your own facial expressions via webcam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-8">
+                <h3 class="text-sm font-bold text-white/30 uppercase tracking-widest mb-8 text-center">Visual Consistency vs Gen-2</h3>
+                <div class="chart-container">
+                    <canvas id="compChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card p-8">
+                <h3 class="text-sm font-bold text-white/30 uppercase tracking-widest mb-6">Pricing Tier Distribution</h3>
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+            <div class="card p-10 bg-gradient-to-br from-neutral-900 to-black border-white/5">
+                <h3 class="text-2xl font-black mb-6 italic italic">Personal Leverage Assessment</h3>
+                <p class="text-white/60 mb-8 leading-relaxed">
+                    Runway is the only platform providing **Professional Grade** tools for the solo builder. If your project requires precise control rather than just "random cool shots," Runway is the mandatory choice.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <p class="text-[10px] font-bold text-white/40 uppercase">Confidence</p>
+                        <p class="text-2xl font-black text-rose-500">98%</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <p class="text-[10px] font-bold text-white/40 uppercase">Ecosystem</p>
+                        <p class="text-2xl font-black text-rose-500">EXCEL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-20 border-t border-white/10 text-center text-white/20 text-[10px] font-black uppercase tracking-[0.5em]">
+        Runway Deep Research Archive &bull; Solo Builder Focus 2026
+    </footer>
+
+    <script>
+        // Comparison Chart
+        new Chart(document.getElementById('compChart'), {
+            type: 'line',
+            data: {
+                labels: ['Start', '2s', '4s', '6s', '8s', '10s'],
+                datasets: [{
+                    label: 'Gen-3 Consistency',
+                    data: [100, 98, 95, 92, 90, 88],
+                    borderColor: '#ff3366',
+                    backgroundColor: 'rgba(255, 51, 102, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }, {
+                    label: 'Gen-2 Consistency',
+                    data: [100, 85, 70, 50, 30, 15],
+                    borderColor: '#444',
+                    borderDash: [5, 5],
+                    fill: false,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { labels: { color: '#fff' } } },
+                scales: {
+                    y: { grid: { color: '#111' }, ticks: { color: '#555' }, beginAtZero: true, max: 100 },
+                    x: { grid: { display: false }, ticks: { color: '#555' } }
+                }
+            }
+        });
+
+        // Price Chart
+        new Chart(document.getElementById('priceChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Standard', 'Pro', 'Unlimited', 'Enterprise'],
+                datasets: [{
+                    data: [40, 35, 20, 5],
+                    backgroundColor: ['#1a1a1a', '#ff3366', '#ff00ff', '#ffffff'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { color: '#fff', boxWidth: 10 } } }
+            }
+        });
+    </script>
+</body>
+</html>

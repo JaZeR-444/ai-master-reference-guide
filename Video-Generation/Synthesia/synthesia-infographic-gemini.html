@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthesia: Deep Research Analysis 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background-color: #fcfcfc; color: #0f172a; font-family: 'Inter', sans-serif; }
+        .chart-container { position: relative; width: 100%; height: 280px; }
+        .card { background: white; border-radius: 0.75rem; border: 1px solid #e2e8f0; }
+        .accent-blue { color: #0052ff; }
+        .bg-accent-blue { background-color: #0052ff; }
+        .gradient-blue { background: linear-gradient(to bottom, #0052ff, #0037ab); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-accent-blue rounded flex items-center justify-center text-white font-bold">S</div>
+                <h1 class="text-xl font-bold tracking-tight">Synthesia <span class="text-slate-400 font-normal italic">Enterprise Audit</span></h1>
+            </div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Confidential Research v3.0</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 text-xs font-bold uppercase">Market Leader</div>
+                <h2 class="text-5xl font-extrabold text-slate-900 leading-none">The Global Standard for <br><span class="accent-blue">Corporate AI Video</span></h2>
+                <p class="text-lg text-slate-500 max-w-xl">
+                    Synthesia remains the incumbent powerhouse, focusing on SOC2 security, massive-scale localization, and stable, high-fidelity avatar performance.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">230+</p>
+                        <p class="text-xs font-bold text-slate-400 uppercase">AI Avatars</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">140+</p>
+                        <p class="text-xs font-bold text-slate-400 uppercase">Languages</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+                        <p class="text-3xl font-bold text-slate-900">SOC2</p>
+                        <p class="text-xs font-bold text-slate-400 uppercase">Compliance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-6 bg-slate-900 text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold opacity-50 uppercase tracking-widest mb-4">Strategic Moat</h3>
+                    <p class="text-xl font-medium leading-relaxed italic">"While others chase TikTok, Synthesia builds the operating system for global corporate communication."</p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-slate-800">
+                    <p class="text-sm font-bold">Viability Score</p>
+                    <div class="w-full bg-slate-800 h-2 rounded-full mt-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="card p-8">
+                <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Competitive Performance Matrix</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+            <div class="card p-8">
+                <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Resource Allocation (Product Focus)</h3>
+                <div class="chart-container">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-600 rounded-2xl p-8 md:p-12 text-white">
+            <h3 class="text-2xl font-bold mb-8 text-center">Synthesia 3.0: Core Innovation Pillars</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <div class="text-2xl">🤖</div>
+                    <h4 class="text-xl font-bold">Video Agents</h4>
+                    <p class="text-blue-100 text-sm">Interactive, conversational avatars that respond to user queries in real-time. Designed for customer support and personalized training.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-2xl">🎬</div>
+                    <h4 class="text-xl font-bold">AI Producer</h4>
+                    <p class="text-blue-100 text-sm">Automated end-to-end video creation. Convert a single document into a fully storyboarded, multi-scene video module.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-2xl">🔊</div>
+                    <h4 class="text-xl font-bold">Expression Engine</h4>
+                    <p class="text-blue-100 text-sm">New micro-expression models that capture subtle emotional shifts, drastically reducing 'uncanny valley' stiff-neck syndrome.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col md:flex-row gap-8">
+            <div class="flex-1 card p-8 border-l-4 border-l-blue-600">
+                <h4 class="font-bold text-slate-900 mb-2">When to Choose</h4>
+                <p class="text-sm text-slate-500 mb-4">Enterprise scale, internal training, localized corporate messaging, and security-first environments.</p>
+                <ul class="text-xs space-y-2 text-slate-600">
+                    <li class="flex items-center gap-2">✅ Scale of 1,000+ videos/year</li>
+                    <li class="flex items-center gap-2">✅ Strict Brand Governance</li>
+                    <li class="flex items-center gap-2">✅ SOC2/ISO Requirements</li>
+                </ul>
+            </div>
+            <div class="flex-1 card p-8 border-l-4 border-l-slate-400">
+                <h4 class="font-bold text-slate-900 mb-2">When to Avoid</h4>
+                <p class="text-sm text-slate-500 mb-4">Viral marketing, low-budget creative experiments, and solo projects requiring high-speed personal cloning.</p>
+                <ul class="text-xs space-y-2 text-slate-600">
+                    <li class="flex items-center gap-2">❌ Fast-turnaround social media</li>
+                    <li class="flex items-center gap-2">❌ Individual Creator on a Budget</li>
+                    <li class="flex items-center gap-2">❌ High-Energy Character Action</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 text-center border-t border-slate-200 text-slate-400 text-xs font-bold uppercase tracking-widest">
+        Synthesia Deep Research &bull; Solo Builder Audit 2026
+    </footer>
+
+    <script>
+        // Radar Chart
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Stability', 'Security', 'Avatar Count', 'Interactivity', 'Speed'],
+                datasets: [{
+                    label: 'Synthesia',
+                    data: [5, 5, 5, 4, 3],
+                    backgroundColor: 'rgba(0, 82, 255, 0.2)',
+                    borderColor: '#0052ff',
+                    pointBackgroundColor: '#0052ff'
+                }, {
+                    label: 'Market Avg',
+                    data: [3, 2, 3, 3, 4],
+                    backgroundColor: 'rgba(148, 163, 184, 0.2)',
+                    borderColor: '#94a3b8',
+                    pointBackgroundColor: '#94a3b8'
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { r: { suggestedMin: 0, suggestedMax: 5, ticks: { display: false } } } }
+        });
+
+        // Pie Chart
+        new Chart(document.getElementById('pieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Enterprise Security', 'Localization Tech', 'Avatar Rendering', 'AI Automation'],
+                datasets: [{
+                    data: [35, 30, 20, 15],
+                    backgroundColor: ['#0f172a', '#1e293b', '#334155', '#475569'],
+                    borderWidth: 0
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+        });
+    </script>
+</body>
+</html>

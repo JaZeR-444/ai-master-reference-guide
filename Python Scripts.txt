@@ -1,0 +1,3 @@
+python-scripts.txt
+
+python update_ai_research.py
